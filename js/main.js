@@ -161,9 +161,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.timeline .entry[data-position]').forEach(entry => {
-        const position = parseInt(entry.dataset.position, 10);
-        if (!Number.isNaN(position)) {
-            entry.style.gridRow = `${position} / ${position + 1}`;
+        const positions = (entry.dataset.position || '')
+            .split(',')
+            .map(part => parseInt(part.trim(), 10))
+            .filter(num => !Number.isNaN(num));
+
+        if (!positions.length) {
+            return;
         }
+
+        positions.sort((a, b) => a - b);
+        const start = positions[0];
+        const end = positions[positions.length - 1] + 1;
+
+        entry.style.gridRow = `${start} / ${end}`;
     });
 });
