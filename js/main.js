@@ -158,3 +158,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.timeline .entry[data-position]').forEach(entry => {
+        const position = parseInt(entry.dataset.position, 10);
+        if (!Number.isNaN(position)) {
+            entry.style.gridRow = `${position} / ${position + 1}`;
+        }
+    });
+});
