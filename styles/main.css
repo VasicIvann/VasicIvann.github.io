@@ -17,6 +17,11 @@ body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     background-color: var(--background-light);
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: var(--text-primary);
     
 }
@@ -54,7 +59,7 @@ body::-webkit-scrollbar-thumb:hover {
     width: 100%;
     padding: 60px 20px;
     text-align: center;
-    background-color: #fff;
+    background-color: transparent;
     box-sizing: border-box;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -70,7 +75,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .section:nth-child(even) {
-    background-color: var(--background-light);
+    background-color: transparent;
 }
 
 #dhead {
