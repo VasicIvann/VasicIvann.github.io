@@ -232,8 +232,13 @@
     margin: 0 0 20px 0;
 }
 .timeline-labels .label {
-    font-weight: 600;
+    font-weight: 400;
     color: var(--text-secondary);
+    font-size: 2.2rem;
 }
-.timeline-labels .label.academic { grid-column: 1; justify-self: end; }
+.timeline-labels .label.academic { grid-column: 1; justify-self: end; color: var(--primary-color); }
 .timeline-labels .label.professional { grid-column: 3; justify-self: start; color: var(--primary-color); }
+
+#timeline h2 {
+    font-size: 42px;
+}
