@@ -42,18 +42,18 @@
     background-clip: text;
     line-height: 1.2;
 }
-
 .hero-content h2 {
     font-size: 1.4em;
     margin: 0 0 30px 0;
-    color: var(--text-secondary);
+    color: #000;
     font-weight: 400;
     line-height: 1.4;
 }
 
 .hero-description {
     font-size: 1.1em;
-    color: var(--text-primary);
+    color: #000;
+    background-color: #fff;
     margin: 0 0 40px 0;
     line-height: 1.6;
     max-width: 600px;
