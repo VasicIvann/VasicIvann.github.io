@@ -147,6 +147,11 @@
 .entry-meta .year,
 .entry-meta .location {
     display: inline-block;
+    color: purple;
+}
+
+.entry-meta .year {
+    color: #5dade2;
 }
 
 .entry-meta .year::after {
@@ -242,3 +247,4 @@
 #timeline h2 {
     font-size: 42px;
 }
+
