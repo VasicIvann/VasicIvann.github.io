@@ -1,28 +1,30 @@
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
     margin-bottom: 40px;
 }
 
 .project-card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(52, 73, 94, 0.1);
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-glass);
+    border-radius: 16px;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     display: flex;
     flex-direction: column;
-    height: 450px; /* Fixed height for all cards */
+    height: 480px;
+    position: relative;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(52, 73, 94, 0.15);
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-glow);
 }
 
 .project-preview {
-    padding: 20px;
+    padding: 25px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -30,155 +32,143 @@
 
 .project-preview img {
     width: 100%;
-    height: 150px;
+    height: 180px;
     object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    filter: brightness(0.8) contrast(1.1);
+    transition: all 0.4s ease;
+}
+
+.project-card:hover .project-preview img {
+    filter: brightness(1);
+    transform: scale(1.02);
 }
 
 .project-preview h4 {
-    font-size: 18px;
+    font-size: 20px;
     color: var(--text-primary);
     margin: 0 0 10px 0;
-    /* Limit to 2 lines */
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    height: 3.5em; /* Adjust based on your line-height */
+    font-weight: 600;
+    line-height: 1.4;
 }
 
 .project-brief {
-    font-size: 14px;
+    font-size: 15px;
     color: var(--text-secondary);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     flex-grow: 1;
-    overflow: hidden;
-    /* Limit to 3 lines */
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+    line-height: 1.6;
 }
 
 .project-tools {
     font-size: 12px;
-    color: var(--primary-color);
-    font-weight: 500;
+    color: var(--secondary-color);
+    font-family: 'JetBrains Mono', monospace;
     margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px solid var(--border-glass);
 }
 
 .view-details-btn {
-    display: block;
     width: 100%;
-    padding: 10px;
-    background-color: var(--primary-color);
-    color: var(--text-light);
+    padding: 15px;
+    background: transparent;
+    color: var(--primary-color);
     border: none;
+    border-top: 1px solid var(--border-glass);
     cursor: pointer;
     font-size: 14px;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 
 .view-details-btn:hover {
-    background-color: var(--secondary-color);
+    background: var(--primary-color);
+    color: #000;
 }
 
-.project-details.hidden {
-    display: none;
-}
+.project-details.hidden { display: none; }
 
-
-
-/* Modal styles */
+/* Modal Styles - Dark Mode Optimized */
 .modal {
     display: none;
     position: fixed;
-    z-index: 1000;
+    z-index: 2000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #1e293b;
     margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
+    padding: 40px;
+    border: 1px solid var(--border-glass);
     width: 90%;
     max-width: 800px;
-    height: 90%;
-    max-height: 80vh;
-    border-radius: 10px;
+    max-height: 85vh;
+    border-radius: 20px;
     overflow-y: auto;
-    display: flex;
-    flex-direction: column;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    color: var(--text-primary);
 }
 
 .modal-content img {
     width: 100%;
-    max-height: 300px;
-    object-fit: contain;
-    border-radius: 8px;
-    margin-bottom: 15px;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border: 1px solid var(--border-glass);
 }
 
 .modal-content h3 {
-    font-size: 24px;
-    color: var(--text-primary);
-    margin: 0 0 15px 0;
+    color: var(--primary-color);
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .modal-content .project-description {
-    font-size: 16px;
     color: var(--text-secondary);
-    line-height: 1.6;
-}
-
-.modal-content .project-info {
-    margin-bottom: 15px;
-}
-
-.modal-content .project-links {
-    margin-top: 20px;
+    line-height: 1.8;
+    font-size: 16px;
 }
 
 .modal-content .project-links a {
     display: inline-block;
-    padding: 8px 15px;
-    background-color: var(--primary-color);
-    color: var(--text-light);
+    padding: 10px 20px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: white;
     text-decoration: none;
-    border-radius: 5px;
-    margin-right: 10px;
-    transition: background-color 0.3s ease;
+    border-radius: 50px;
+    margin-right: 15px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+    transition: transform 0.2s;
 }
 
 .modal-content .project-links a:hover {
-    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.5);
 }
 
 .close {
-    color: #aaa;
-    align-self: flex-end;
-    font-size: 28px;
+    color: var(--text-secondary);
+    float: right;
+    font-size: 32px;
     font-weight: bold;
-    cursor: pointer;
+    transition: color 0.3s;
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
+.close:hover {
+    color: var(--accent-color);
     cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .modal-content {
-        width: 95%;
-        margin: 2% auto;
-    }
 }
