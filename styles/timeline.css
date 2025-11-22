@@ -29,7 +29,7 @@
     align-items: flex-start;
 }
 
-.entry.academic { grid-column: 1 / 2; justify-self: end; text-align: right; flex-direction: row-reverse; }
+.entry.academic { grid-column: 1 / 2; justify-self: end; text-align: left; flex-direction: row-reverse; }
 .entry.professional { grid-column: 3 / 4; justify-self: start; text-align: left; }
 
 .entry-image {
@@ -129,6 +129,14 @@
     margin: 0;
 }
 
+/* Ensure bullet lists are left-aligned inside cards */
+.entry-content ul {
+    margin: 10px 0 0 0;
+    padding-left: 20px;
+    text-align: left;
+    list-style-position: inside;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .timeline { grid-template-columns: 1fr; padding-left: 30px; }
@@ -175,5 +183,5 @@
     letter-spacing: 2px;
     opacity: 0.8;
 }
-.timeline-labels .label.academic { grid-column: 1; text-align: right; }
+.timeline-labels .label.academic { grid-column: 1; text-align: left; }
 .timeline-labels .label.professional { grid-column: 3; text-align: left; }
