@@ -17,13 +17,27 @@ body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     background-color: var(--background-light);
-    background-image: url('../assets/background.jpg');
+    background-image: url('../assets/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: var(--text-primary);
     
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    background-repeat: inherit;
+    background-attachment: inherit;
+    transform: scale(1.05);
+    z-index: -1;
+    pointer-events: none;
 }
 
 main {
