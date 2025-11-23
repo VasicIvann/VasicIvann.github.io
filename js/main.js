@@ -1,8 +1,3 @@
-const rot13 = (message) => {
-    const alpha = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLM';
-    return message.replace(/[a-z]/gi, letter => alpha[alpha.indexOf(letter) + 13]);
-}
-
 let e_is_shown = false;
 
 document.getElementById('iemail').addEventListener("click", function(){
