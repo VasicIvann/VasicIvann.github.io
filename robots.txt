@@ -3,4 +3,4 @@ Disallow: /private/
 Disallow: /tmp/
 Allow: /
 
-Sitemap: https://VasicIvann.github.io/sitemap.xml
+Sitemap: https://vasicivann.github.io/sitemap.xml
