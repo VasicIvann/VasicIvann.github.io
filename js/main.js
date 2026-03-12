@@ -155,7 +155,18 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.timeline .entry[data-position]').forEach(entry => {
+    const timelineEntries = document.querySelectorAll('.timeline .entry[data-position]');
+
+    // Find the maximum position value to compute reversed rows
+    let maxPos = 0;
+    timelineEntries.forEach(entry => {
+        (entry.dataset.position || '').split(',').forEach(part => {
+            const n = parseInt(part.trim(), 10);
+            if (!Number.isNaN(n) && n > maxPos) maxPos = n;
+        });
+    });
+
+    timelineEntries.forEach(entry => {
         const positions = (entry.dataset.position || '')
             .split(',')
             .map(part => parseInt(part.trim(), 10))
@@ -165,9 +176,10 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        positions.sort((a, b) => a - b);
-        const start = positions[0];
-        const end = positions[positions.length - 1] + 1;
+        // Reverse chronological order: map position p → (maxPos + 1 - p)
+        const reversed = positions.map(p => maxPos + 1 - p).sort((a, b) => a - b);
+        const start = reversed[0];
+        const end = reversed[reversed.length - 1] + 1;
 
         entry.style.gridRow = `${start} / ${end}`;
     });
