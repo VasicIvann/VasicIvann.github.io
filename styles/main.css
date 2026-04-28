@@ -134,3 +134,17 @@ footer {
 @media (min-width: 1025px) {
     .section { padding: 100px 80px; }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .orb-ring-outer,
+    .orb-ring-inner,
+    .orb-glow,
+    .status-led,
+    .now-pulse,
+    .title-cursor,
+    .scroll-arrow,
+    .hero-title,
+    .orb-tag {
+        animation: none !important;
+    }
+}

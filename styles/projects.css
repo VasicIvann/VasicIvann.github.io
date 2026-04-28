@@ -1,3 +1,25 @@
+/* ===========================================
+   PROJECTS SECTION
+   =========================================== */
+
+#projects {
+    position: relative;
+}
+
+#projects::before {
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: -10%;
+    width: 480px;
+    height: 480px;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.08) 0%, transparent 70%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+#projects > * { position: relative; z-index: 1; }
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -5,56 +27,104 @@
     margin-bottom: 40px;
 }
 
+/* === Card === */
 .project-card {
     background-color: var(--bg-card);
     border: 1px solid var(--border-glass);
-    border-radius: 16px;
+    border-radius: 20px;
     overflow: hidden;
-    transition: all 0.4s ease;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 0.4s ease,
+                box-shadow 0.4s ease;
     display: flex;
     flex-direction: column;
     height: 550px;
     position: relative;
+    backdrop-filter: blur(10px);
+}
+
+/* Top gradient accent line */
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), var(--secondary-color), var(--accent-color), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+}
+
+/* Subtle inner halo on hover */
+.project-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.10), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
     border-color: var(--primary-color);
-    box-shadow: var(--shadow-glow);
+    box-shadow: 0 22px 50px -12px rgba(0, 0, 0, 0.65),
+                0 0 30px rgba(56, 189, 248, 0.18);
 }
 
+.project-card:hover::before { opacity: 1; }
+.project-card:hover::after  { opacity: 1; }
+
+/* === Preview === */
 .project-preview {
-    padding: 25px;
+    padding: 25px 25px 3px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
 }
 
 .project-preview img {
     width: 100%;
     height: 180px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 12px;
     margin-bottom: 20px;
-    filter: brightness(0.8) contrast(1.1);
-    transition: all 0.4s ease;
+    border: 1px solid var(--border-glass);
+    filter: brightness(0.78) contrast(1.08) saturate(1.05);
+    transition: filter 0.4s ease, transform 0.4s ease, border-color 0.4s ease;
 }
 
 .project-card:hover .project-preview img {
-    filter: brightness(1);
-    transform: scale(1.02);
+    filter: brightness(1) contrast(1.05) saturate(1.1);
+    transform: scale(1.025);
+    border-color: rgba(56, 189, 248, 0.35);
 }
 
 .project-preview h4 {
-    font-size: 20px;
+    font-size: 19px;
     color: var(--text-primary);
     margin: 0 0 10px 0;
     font-weight: 600;
     line-height: 1.4;
+    text-align: left;
+    transition: color 0.3s ease;
+}
+
+.project-card:hover .project-preview h4 {
+    background: linear-gradient(135deg, var(--text-primary), var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .project-brief {
-    font-size: 15px;
+    font-size: 14.5px;
     color: var(--text-secondary);
     margin-bottom: 15px;
     flex-grow: 1;
@@ -66,33 +136,69 @@
     color: var(--secondary-color);
     font-family: 'JetBrains Mono', monospace;
     margin-top: auto;
-    padding-top: 15px;
+    padding-top: 14px;
     border-top: 1px solid var(--border-glass);
+    line-height: 1.55;
+    letter-spacing: 0.2px;
+    position: relative;
 }
 
+.project-tools::before {
+    content: '// stack';
+    display: block;
+    font-size: 10px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    margin-bottom: 6px;
+    opacity: 0.7;
+}
+
+/* === View details button === */
 .view-details-btn {
     width: 100%;
-    padding: 15px;
+    padding: 14px;
     background: transparent;
     color: var(--primary-color);
     border: none;
     border-top: 1px solid var(--border-glass);
     cursor: pointer;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    font-family: 'JetBrains Mono', monospace;
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.view-details-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.18), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
 }
 
 .view-details-btn:hover {
-    background: var(--primary-color);
-    color: #000;
+    background: rgba(56, 189, 248, 0.08);
+    color: var(--text-light);
+    letter-spacing: 2px;
+}
+
+.view-details-btn:hover::before {
+    transform: translateX(100%);
 }
 
 .project-details.hidden { display: none; }
 
-/* Modal Styles - Dark Mode Optimized */
+/* ===========================================
+   PROJECT MODAL
+   =========================================== */
+
 .modal {
     display: none;
     position: fixed;
@@ -101,74 +207,194 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(5px);
+    background-color: rgba(2, 6, 23, 0.78);
+    backdrop-filter: blur(8px);
+    animation: modalFadeIn 0.25s ease;
+}
+
+@keyframes modalFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 .modal-content {
-    background-color: #1e293b;
+    background-color: rgba(30, 41, 59, 0.92);
     margin: 5% auto;
     padding: 40px;
     border: 1px solid var(--border-glass);
     width: 90%;
-    max-width: 800px;
+    max-width: 820px;
     max-height: 85vh;
-    border-radius: 20px;
+    border-radius: 24px;
     overflow-y: auto;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 30px 70px -20px rgba(0, 0, 0, 0.7),
+                0 0 40px rgba(56, 189, 248, 0.12);
     color: var(--text-primary);
+    backdrop-filter: blur(20px);
+    position: relative;
+    animation: modalSlideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalSlideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.modal-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+    border-radius: 24px 24px 0 0;
 }
 
 .modal-content img {
     width: 100%;
     max-height: 350px;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 14px;
     margin-bottom: 25px;
     border: 1px solid var(--border-glass);
 }
 
 .modal-content h3 {
     color: var(--primary-color);
-    font-size: 28px;
+    font-size: 26px;
+    margin: 0 0 20px;
+    background: linear-gradient(135deg, var(--text-primary), var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.modal-content .modal-brief {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.modal-content .modal-tools {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--secondary-color);
+    font-size: 13px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--border-glass);
+    margin-bottom: 24px;
+}
+
+.modal-content .modal-tools strong { color: var(--primary-color); }
+
+.modal-content .project-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 14px 18px;
     margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--border-glass);
+    border-radius: 10px;
+}
+
+.modal-content .project-info p {
+    margin: 0;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.modal-content .project-info strong {
+    color: var(--primary-color);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 2px;
 }
 
 .modal-content .project-description {
     color: var(--text-secondary);
     line-height: 1.8;
-    font-size: 16px;
+    font-size: 15px;
+}
+
+.modal-content .project-description strong { color: var(--text-primary); }
+
+.modal-content .project-description code {
+    background: rgba(0, 0, 0, 0.35);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--primary-color);
+    font-size: 0.9em;
+}
+
+.modal-content .project-description ul {
+    padding-left: 22px;
+    margin: 12px 0;
+}
+
+.modal-content .project-description li {
+    margin-bottom: 8px;
+}
+
+.modal-content .project-description li::marker {
+    color: var(--primary-color);
+}
+
+.modal-content .project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
 }
 
 .modal-content .project-links a {
-    display: inline-block;
-    padding: 10px 20px;
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-    color: white;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 22px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--bg-dark);
     text-decoration: none;
-    border-radius: 50px;
-    margin-right: 15px;
-    margin-top: 20px;
-    font-weight: 600;
-    font-size: 14px;
-    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
-    transition: transform 0.2s;
+    border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.28);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    margin: 0;
 }
 
 .modal-content .project-links a:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.5);
+    box-shadow: 0 10px 28px rgba(56, 189, 248, 0.45);
 }
 
 .close {
+    position: absolute;
+    top: 18px;
+    right: 22px;
     color: var(--text-secondary);
-    float: right;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
-    transition: color 0.3s;
+    line-height: 1;
+    transition: color 0.3s, transform 0.3s;
+    cursor: pointer;
+    z-index: 10;
 }
 
 .close:hover {
     color: var(--accent-color);
-    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+    .project-card { height: auto; }
+    .modal-content { padding: 30px 20px; }
 }
