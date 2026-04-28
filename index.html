@@ -524,6 +524,37 @@
 
                     <div class="project-card">
                         <div class="project-preview">
+                            <img loading="lazy" data-src="assets/projects/bank_classification.png" alt="Bank Term Deposit Prediction">
+                            <h4>Bank Term Deposit Prediction - ML Binary Classification</h4>
+                            <p class="project-brief">Machine learning study on a Kaggle Playground dataset, benchmarking six classifiers and tackling severe class imbalance and data leakage.</p>
+                            <p class="project-tools">Python, Pandas, Scikit-learn, XGBoost, LaTeX</p>
+                        </div>
+                        <button class="view-details-btn">View Details</button>
+                        <div class="project-details hidden">
+                            <div class="project-info">
+                                <p><strong>School:</strong> UTBM</p>
+                                <p><strong>Team size:</strong> 3</p>
+                                <p><strong>Date:</strong> 2026</p>
+                                <p><strong>Course:</strong> Data Science &amp; Machine Learning</p>
+                            </div>
+                            <p class="project-description">
+                                A full supervised binary classification pipeline predicting whether a client subscribes to a term deposit after a marketing campaign:
+                                <ul>
+                                    <li>Performed in-depth <strong>EDA</strong> on 750k rows / 16 features, identifying severe class imbalance (~7.3:1) and disguised missing values (<strong>"unknown"</strong> categories, <code>pdays = -1</code>).</li>
+                                    <li>Diagnosed and removed a documented <strong>temporal data leakage</strong> on the <code>duration</code> feature (point-biserial r = +0.52), favouring production realism over leaderboard score.</li>
+                                    <li>Built a leakage-safe <strong>Scikit-learn Pipeline</strong> (<code>ColumnTransformer</code> + <code>StandardScaler</code> + <code>OneHotEncoder</code>) fitted only on training folds.</li>
+                                    <li>Benchmarked six models (Logistic Regression, LDA, QDA, Gaussian NB, Random Forest, <strong>XGBoost</strong>) on four complementary metrics (ROC-AUC, PR-AUC, F1, Brier), validated by stratified 5-fold cross-validation.</li>
+                                </ul>
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/VasicIvann/VasicIvann.github.io/blob/main/assets/Bank_Final_DS52.ipynb" target="_blank">Code</a>
+                                <a href="assets/final_presentation.pdf" target="_blank">Presentation</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-preview">
                             <img loading="lazy" data-src="assets/projects/teeko.png" alt="Teeko Game Interface">
                             <h4>Teeko - AI Strategy Game</h4>
                             <p class="project-brief">A Python implementation of the Teeko board game featuring a responsive GUI and a scalable AI opponent using advanced search algorithms.</p>
