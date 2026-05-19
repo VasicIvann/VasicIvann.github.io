@@ -653,6 +653,43 @@
                         </div>
                     </div>
 
+                    <div class="project-card">
+                        <div class="project-preview">
+                            <img loading="lazy" data-src="assets/projects/hsk_trainer.png" alt="HSK Trainer Interface">
+                            <h4>HSK Trainer - Chinese Language Learning Platform</h4>
+                            <p class="project-brief">A full-stack web app for preparing HSK Chinese proficiency exams, combining spaced-repetition scheduling (FSRS) with LLM-powered written-expression grading.</p>
+                            <p class="project-tools">FastAPI, Next.js 16, PostgreSQL, Anthropic API, Python, TypeScript, Tailwind CSS</p>
+                        </div>
+
+                        <button class="view-details-btn">View Details</button>
+
+                        <div class="project-details hidden">
+                            <div class="project-info">
+                                <p><strong>Team size:</strong> 1</p>
+                                <p><strong>Date:</strong> 2025 - 2026</p>
+                                <p><strong>Type:</strong> Personal Project</p>
+                            </div>
+
+                            <div class="project-description">
+                                <p>
+                                    HSK Trainer is a production-grade language-learning platform covering HSK levels 1–3 (~600 words), built as both a daily study tool and an engineering portfolio piece:
+                                </p>
+                                <ul>
+                                    <li>Implemented an <strong>FSRS spaced-repetition scheduler</strong> that models per-card stability and difficulty, scheduling each review just before predicted forgetting — outperforming classic SM-2 (Anki).</li>
+                                    <li>Integrated <strong>Anthropic API</strong> (streaming SSE) to grade free-form written Chinese, returning a structured correction: score, corrected version, pinyin, translation, typed mistakes, and a next-step recommendation.</li>
+                                    <li>Designed a <strong>feedback loop</strong> that automatically re-queues vocabulary flagged as misused by llm back into the FSRS review deck.</li>
+                                    <li>Built an <strong>optimistic quiz UI</strong> (Next.js + TanStack Query) that prefetches the session and advances client-side on rating, reducing perceived latency from 2–5 s to under 50 ms.</li>
+                                    <li>Deployed the full stack at <strong>near-zero cost</strong>: Vercel (frontend), Render free tier (FastAPI backend), Neon Postgres — with a keep-warm cron and infrastructure-as-code via <code>render.yaml</code>.</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/VasicIvann/Chinese_HSK_app" target="_blank">Code</a>
+                                <a href="assets/Chinese_HSK_app_Report.pdf" target="_blank">Report</a>
+                                <a href="https://chinese-hsk-app.vercel.app/" target="_blank">Website Link</a>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
