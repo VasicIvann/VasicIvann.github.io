@@ -618,6 +618,44 @@
 
                     <div class="project-card">
                         <div class="project-preview">
+                            <img loading="lazy" data-src="assets/projects/pf22logo.png" alt="Multi-Fidelity Deep Learning Project">
+                            <h4>Multi-Fidelity Deep Learning – Reducing Training Costs</h4>
+                            <p class="project-brief">Explored how combining a small share of expensive High-Fidelity images with abundant cheap Low-Fidelity data can drastically cut dataset acquisition costs without sacrificing accuracy.</p>
+                            <p class="project-tools">Python, PyTorch, ResNet-18, Optuna, Transfer Learning, EWC, Curriculum Learning</p>
+                        </div>
+
+                        <button class="view-details-btn">View Details</button>
+
+                        <div class="project-details hidden">
+                            <div class="project-info">
+                                <p><strong>Team size:</strong> 1</p>
+                                <p><strong>Date:</strong> March – June 2026</p>
+                                <p><strong>Type:</strong> UTBM School Project (PF22 – Deep Learning)</p>
+                            </div>
+
+                            <div class="project-description">
+                                <p>
+                                    This project investigates <strong>multi-fidelity learning</strong> for image classification: how to maximise High-Fidelity (HF) accuracy while minimising the total cost of acquiring training data, by leveraging large volumes of cheap Low-Fidelity (BF) images alongside a small HF set.
+                                </p>
+                                <ul>
+                                    <li>Designed a controlled <strong>degradation pipeline</strong> (sub-sampling 224→64 px, Gaussian noise σ=0.15, JPEG q60) applied deterministically to simulate realistic BF data across three datasets: Animals-10, Imagewoof, and Intel Image.</li>
+                                    <li>Defined a three-metric cost model (data cost, compute cost, total cost) to rigorously compare strategies on equal footing.</li>
+                                    <li>Implemented and compared four multi-fidelity strategies: <strong>Sequential Transfer Learning (BF→HF)</strong>, <strong>Weighted Co-training</strong>, <strong>Progressive Curriculum Learning</strong>, and <strong>Elastic Weight Consolidation (EWC)</strong>.</li>
+                                    <li>Tuned all strategies with <strong>Optuna</strong> and evaluated over 3 datasets × 3 random seeds on a GPU V100S server for statistically robust results.</li>
+                                    <li>EWC achieved the best HF accuracy, <strong>halving the total cost</strong> compared to a naive HF-only baseline, consistently across all three datasets.</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/VasicIvann/PF22_MultiFidelity_DL" target="_blank">Code</a>
+                                <a href="assets/pf22_rapport.pdf" target="_blank">Report</a>
+                                <a href="assets/presentation_finale_PF22.pdf" target="_blank">Slides</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-preview">
                             <img loading="lazy" data-src="assets/projects/physiovapp.png" alt="Physiovapp Dashboard Interface">
                             <h4>Physiovapp - Daily Health Tracker</h4>
                             <p class="project-brief">A modern web app to track daily habits, health routines, and personal progress with real-time data and interactive charts.</p>
