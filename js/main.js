@@ -367,3 +367,116 @@ document.addEventListener('DOMContentLoaded', () => {
         entry.style.gridRow = `${start} / ${end}`;
     });
 });
+
+
+/* ============================================
+   TIMELINE: collapsible long entries
+   ============================================ */
+(function initTimelineCollapse() {
+    const COLLAPSED_HEIGHT = 150; // visible height (px) when collapsed
+    const TOLERANCE = 80;         // don't collapse if only a little would be hidden
+
+    const cards = document.querySelectorAll('.timeline .entry-content');
+    if (!cards.length) return;
+
+    const items = [];
+
+    function setLabel(item) {
+        item.btn.innerHTML = item.expanded
+            ? 'See less <span aria-hidden="true">↑</span>'
+            : 'See more <span aria-hidden="true">↓</span>';
+        item.btn.setAttribute('aria-expanded', String(item.expanded));
+    }
+
+    function evaluate(item) {
+        const { card, body, btn } = item;
+        const fullHeight = body.scrollHeight;
+
+        if (fullHeight > COLLAPSED_HEIGHT + TOLERANCE) {
+            card.classList.add('is-collapsible');
+            btn.hidden = false;
+            if (item.expanded) {
+                card.classList.remove('is-collapsed');
+                body.style.maxHeight = 'none';
+            } else {
+                card.classList.add('is-collapsed');
+                body.style.maxHeight = COLLAPSED_HEIGHT + 'px';
+            }
+        } else {
+            card.classList.remove('is-collapsible', 'is-collapsed');
+            btn.hidden = true;
+            body.style.maxHeight = 'none';
+            item.expanded = false;
+        }
+        setLabel(item);
+    }
+
+    function toggle(item) {
+        const { card, body } = item;
+
+        if (item.expanded) {
+            // Collapse: animate from the current full height down
+            body.style.maxHeight = body.scrollHeight + 'px';
+            body.offsetHeight; // force reflow so the transition runs
+            body.style.maxHeight = COLLAPSED_HEIGHT + 'px';
+            card.classList.add('is-collapsed');
+            item.expanded = false;
+
+            // If the card top went above the fixed nav, scroll back to it
+            const top = card.getBoundingClientRect().top;
+            if (top < 90) {
+                window.scrollBy({ top: top - 90, behavior: 'smooth' });
+            }
+        } else {
+            // Expand: animate up to the full height
+            body.style.maxHeight = body.scrollHeight + 'px';
+            card.classList.remove('is-collapsed');
+            item.expanded = true;
+        }
+        setLabel(item);
+    }
+
+    cards.forEach((card) => {
+        const header = card.querySelector('.entry-header');
+
+        // Move everything after the header into a .entry-body wrapper
+        const body = document.createElement('div');
+        body.className = 'entry-body';
+        let node = header ? header.nextSibling : card.firstChild;
+        while (node) {
+            const next = node.nextSibling;
+            body.appendChild(node);
+            node = next;
+        }
+        card.appendChild(body);
+
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'entry-toggle';
+        btn.hidden = true;
+        card.appendChild(btn);
+
+        const item = { card, body, btn, expanded: false };
+        items.push(item);
+
+        btn.addEventListener('click', () => toggle(item));
+
+        // Once fully expanded, remove the height cap so content can reflow freely
+        body.addEventListener('transitionend', (e) => {
+            if (e.propertyName === 'max-height' && item.expanded) {
+                body.style.maxHeight = 'none';
+            }
+        });
+    });
+
+    const evaluateAll = () => items.forEach(evaluate);
+
+    evaluateAll();
+    window.addEventListener('load', evaluateAll); // re-measure once fonts and images are in
+
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(evaluateAll, 150);
+    });
+})();

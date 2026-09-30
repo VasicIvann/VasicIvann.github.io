@@ -348,3 +348,64 @@
     .entry::before { display: none; }
     .timeline-labels { display: none; }
 }
+
+
+/* === Collapsible long entries === */
+.entry-body {
+    position: relative;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Fade-out on the bottom of collapsed content */
+.entry-content.is-collapsed .entry-body {
+    -webkit-mask-image: linear-gradient(180deg, #000 55%, transparent 100%);
+    mask-image: linear-gradient(180deg, #000 55%, transparent 100%);
+}
+
+.entry-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+    padding: 6px 14px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    background: rgba(56, 189, 248, 0.08);
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.entry-toggle:hover {
+    background: rgba(56, 189, 248, 0.16);
+    border-color: var(--primary-color);
+}
+
+.entry-toggle:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.entry-toggle[hidden] {
+    display: none;
+}
+
+.entry.academic .entry-toggle {
+    color: var(--secondary-color);
+    background: rgba(129, 140, 248, 0.08);
+    border-color: rgba(129, 140, 248, 0.35);
+}
+
+.entry.academic .entry-toggle:hover {
+    background: rgba(129, 140, 248, 0.16);
+    border-color: var(--secondary-color);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .entry-body { transition: none; }
+}
