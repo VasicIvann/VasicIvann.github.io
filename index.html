@@ -1,1197 +1,1185 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="google-site-verification" content="CkA4HzjlpkH11B_UIv2OlH0ZxVa5w56N3YGPTnDTWRk" />
-        <!-- , shrink-to-fit=no -->
-        <title>Ivann Vasic - AI Engineer Student | Portfolio</title>
-        <meta name="description" content="Portfolio of Ivann Vasic (Vasic Ivann), AI Engineer Student at UTBM, Machine Learning, Data Science, and Quantum Computing Enthusiast.">
-        <meta name="keywords" content="Ivann Vasic, AI Engineer, Machine Learning, Data Science, Quantum Computing Portfolio">
-        <link rel="stylesheet" type="text/css" href="styles/main.css">
-        <link rel="stylesheet" type="text/css" href="styles/nav.css">
-        <link rel="stylesheet" type="text/css" href="styles/info.css">
-        <link rel="stylesheet" type="text/css" href="styles/about.css">
-        <link rel="stylesheet" type="text/css" href="styles/timeline.css">
-        <link rel="stylesheet" type="text/css" href="styles/projects.css">
-        <link rel="stylesheet" type="text/css" href="styles/certifications.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="CkA4HzjlpkH11B_UIv2OlH0ZxVa5w56N3YGPTnDTWRk">
 
-         <!-- Favicon -->
-        <link rel="icon" href="assets/me.jpg" type="image/x-icon">
+    <title>Ivann Vasic - AI Engineer Student | Portfolio</title>
+    <meta name="description" content="Portfolio of Ivann Vasic (Vasic Ivann), AI Engineer Student at UTBM, Machine Learning, Data Science, and Quantum Computing Enthusiast.">
+    <meta name="keywords" content="Ivann Vasic, AI Engineer, Machine Learning, Data Science, Quantum Computing Portfolio">
+    <meta name="author" content="Ivann Vasic">
+    <meta name="theme-color" content="#F2F3F7">
+    <meta name="color-scheme" content="light">
+    <link rel="canonical" href="https://vasicivann.github.io/">
 
-        <!-- Open Graph tags -->
-        <meta property="og:title" content="Ivann Vasic | AI Engineer Student">
-        <meta property="og:description" content="Portfolio of Ivann Vasic, AI Engineer Student, specializing in Machine Learning, Data Science, and LLMs.">
-        <meta property="og:image" content="https://github.com/VasicIvann/VasicIvann.github.io/blob/dev/assets/me.jpg" />
-        <meta property="og:url" content="https://VasicIvann.github.io/" />
-        <meta property="og:type" content="website" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/opt/apple-touch-icon.png">
 
-        <!-- Structured Data Markup -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ivann Vasic | AI Engineer Student">
+    <meta property="og:description" content="Portfolio of Ivann Vasic, AI Engineer Student, specializing in Machine Learning, Data Science, and LLMs.">
+    <meta property="og:image" content="https://vasicivann.github.io/assets/opt/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://vasicivann.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ivann Vasic">
+    <meta name="twitter:card" content="summary_large_image">
 
-        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&family=Inria+Serif:ital,wght@0,300;0,400;1,300&display=swap">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script>document.documentElement.classList.add('js');</script>
+
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Ivann Vasic",
-          "alternateName": "Vasic Ivann",
-          "url": "https://VasicIvann.github.io/",
-          "image": "https://VasicIvann.github.io/assets/me.jpg",
-          "sameAs": [
-            "https://www.linkedin.com/in/ivann-vasic/",
-            "https://github.com/VasicIvann"
-          ],
-          "jobTitle": "AI Engineer Student",
-          "alumniOf": {
-            "@type": "CollegeOrUniversity",
-            "name": "Université de technologie de Belfort Montbéliard"
-          },
-          "internOf": {
-            "@type": "Company",
-            "name": "Michelin"
-          },
-          "knowsAbout": ["Machine Learning", "Data Science", "Large Language Models"],
-          "description": "Ivann Vasic is a student at UTBM, specializing in Machine Learning, Data Science, and Large Language Models (LLMs)."
-        }
-        </script>
-    </head>
-    <body>
-        <header class="gradient-background">
-            <nav>
-                <div class="nav-left">
-                    <a href="#dhead" class="nav-link">Ivann Vasic</a>
-                </div>
-                <div class="nav-right">
-                    <a href="#about" class="nav-link">About</a>
-                    <a href="#skills" class="nav-link">Skills</a>
-                    <a href="#timeline" class="nav-link">Timeline</a>
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <a href="#certifications" class="nav-link">Certifications</a>
-                </div>
-                <div class="nav-mobile">
-                    <!-- <button id="menu-toggle">Menu</button> -->
-                    <button id="menu-toggle" aria-label="Toggle menu">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                    <div id="mobile-menu">
-                        <a href="#about" class="nav-link">About</a>
-                        <a href="#skills" class="nav-link">Skills</a>
-                        <a href="#timeline" class="nav-link">Timeline</a>
-                        <a href="#projects" class="nav-link">Projects</a>
-                        <a href="#certifications" class="nav-link">Certifications</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ivann Vasic",
+      "alternateName": "Vasic Ivann",
+      "url": "https://VasicIvann.github.io/",
+      "image": "https://VasicIvann.github.io/assets/me.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/ivann-vasic/",
+        "https://github.com/VasicIvann"
+      ],
+      "jobTitle": "AI Engineer Student",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Université de technologie de Belfort Montbéliard"
+      },
+      "internOf": {
+        "@type": "Company",
+        "name": "Michelin"
+      },
+      "knowsAbout": ["Machine Learning", "Data Science", "Large Language Models"],
+      "description": "Ivann Vasic is a student at UTBM, specializing in Machine Learning, Data Science, and Large Language Models (LLMs)."
+    }
+    </script>
+</head>
+<body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
 
-        <main>
-            <div id="dhead">
-                <canvas id="hero-canvas" aria-hidden="true"></canvas>
-                <div class="hero-grid">
-                    <div class="hero-content">
-                        <div class="status-badge">
-                            <span class="status-led" aria-hidden="true"></span>
-                            <span class="status-text">Open to internship opportunities</span>
-                        </div>
-                        <p class="hero-greet"><span class="greet-prompt">$</span>hi, I&rsquo;m</p>
-                        <h1 class="hero-title">
-                            <span class="title-text">Ivann Vasic</span><span class="title-cursor" aria-hidden="true">_</span>
-                        </h1>
-                        <h2 class="hero-role">// AI Engineer Student</h2>
-                        <p class="hero-tagline">
-                            Student researcher: merging <span class="hl-1">Data Science</span> and <span class="hl-2">Quantum Computing</span> for innovation.
-                        </p>
-                        <div id="dico">
-                            <a href="https://www.linkedin.com/in/ivann-vasic/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" class="iico" alt="Connect with Ivann on LinkedIn"/></a>
-                            <a href="https://github.com/VasicIvann" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg" class="iico" alt="View Ivann's GitHub projects"/></a>
-                            <a href="#" id="iemail" aria-label="Contact Ivann via email" title="Click to reveal Ivann's email"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/gmail.svg" class="iico" alt="Contact Ivann via email" /></a>
-                        </div>
-                        <div id="demail"></div>
-                        <div class="hero-cta">
-                            <a href="mailto:ivannvasic05@gmail.com" class="btn btn-primary">Contact me</a>
-                            <a href="VasicIvann_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary resume-button">View Resume</a>
-                        </div>
-                    </div>
+    <header class="site-header" id="site-header">
+        <nav class="nav wrap" aria-label="Main">
+            <a class="nav-brand" href="#top">Ivann Vasic</a>
+            <button class="nav-toggle" type="button" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                    <div class="hero-visual">
-                        <div class="profile-orb">
-                            <div class="orb-glow" aria-hidden="true"></div>
-                            <div class="orb-ring orb-ring-outer" aria-hidden="true"></div>
-                            <div class="orb-ring orb-ring-inner" aria-hidden="true"></div>
-                            <div class="profile-photo-wrapper">
-                                <img src="assets/me.jpg" alt="Ivann Vasic" class="profile-photo" />
-                            </div>
-                            <span class="orb-tag tag-ai" aria-hidden="true">{ AI }</span>
-                            <span class="orb-tag tag-ds" aria-hidden="true">{ Data }</span>
-                            <span class="orb-tag tag-qc" aria-hidden="true">{ Quantum }</span>
-                        </div>
+    <main id="main">
+
+        <!-- ============ HERO ============ -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="wrap hero-grid">
+                <p class="status"><span class="status-dot" aria-hidden="true"></span>Open to internship opportunities</p>
+
+                <h1 class="hero-title" id="hero-title">
+                    <span class="hero-hi">Hi, I&rsquo;m</span>
+                    <span class="hero-name"><span class="hero-line"><span>Ivann</span></span> <span class="hero-line"><span>Vasic</span></span></span>
+                </h1>
+
+                <div class="hero-photo">
+                    <img src="assets/opt/me-960.webp"
+                         srcset="assets/opt/me-480.webp 480w, assets/opt/me-960.webp 960w"
+                         sizes="(min-width: 900px) 660px, 42vw"
+                         width="960" height="984" alt="Portrait of Ivann Vasic"
+                         fetchpriority="high" decoding="async">
+                </div>
+
+                <div class="hero-intro">
+                    <p class="hero-role">AI Engineer Student</p>
+                    <p class="hero-tagline">Student researcher: merging Data Science and Quantum Computing for innovation.</p>
+                </div>
+
+                <div class="hero-actions">
+                    <div class="hero-cta">
+                        <a class="btn btn-primary" href="mailto:ivannvasic05@gmail.com">Contact me</a>
+                        <a class="btn btn-secondary" href="VasicIvann_Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
                     </div>
+                    <ul class="hero-links">
+                        <li><a href="https://www.linkedin.com/in/ivann-vasic/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://github.com/VasicIvann" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><button class="link-button" type="button" id="email-toggle" aria-expanded="false" aria-controls="email-panel">Email</button></li>
+                    </ul>
+                    <p class="hero-email" id="email-panel" hidden></p>
                 </div>
-                <div class="hero-scroll-indicator" aria-hidden="true">
-                    <span class="scroll-text">scroll</span>
-                    <span class="scroll-arrow"></span>
-                </div>
+
+                <dl class="facts">
+                    <div class="fact">
+                        <dt>Based in</dt>
+                        <dd>France</dd>
+                    </div>
+                    <div class="fact">
+                        <dt>Currently</dt>
+                        <dd>4<sup>th</sup> year Engineering @ UTBM</dd>
+                    </div>
+                    <div class="fact">
+                        <dt>Looking for</dt>
+                        <dd>R&amp;D end of studies internship opportunities</dd>
+                    </div>
+                    <div class="fact">
+                        <dt>Languages</dt>
+                        <dd>French · English · <span lang="zh">中文</span></dd>
+                    </div>
+                </dl>
             </div>
+        </section>
 
-<!-- Popup Modal -->
-<div id="project-modal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <div id="modal-project-content"></div>
-    </div>
-</div>
+        <!-- ============ ABOUT ============ -->
+        <section class="section" id="about" aria-labelledby="about-title">
+            <div class="wrap">
+                <h2 class="section-title" id="about-title">About</h2>
 
-            <div class="section" id="about">
-                <h2>About</h2>
-                <div class="about-card tilt-card">
-                    <div class="about-grid">
-                        <aside class="about-facts">
-                            <div class="fact">
-                                <span class="fact-icon" aria-hidden="true">↪</span>
-                                <div class="fact-body">
-                                    <span class="fact-label">Based in</span>
-                                    <span class="fact-value">France</span>
-                                </div>
-                            </div>
-                            <div class="fact">
-                                <span class="fact-icon" aria-hidden="true">↪</span>
-                                <div class="fact-body">
-                                    <span class="fact-label">Currently</span>
-                                    <span class="fact-value">4<sup>th</sup> year Engineering @ UTBM</span>
-                                </div>
-                            </div>
-                            <div class="fact">
-                                <span class="fact-icon" aria-hidden="true">↪</span>
-                                <div class="fact-body">
-                                    <span class="fact-label">Looking for</span>
-                                    <span class="fact-value">R&amp;D end of studies internship opportunities</span>
-                                </div>
-                            </div>
-                            <div class="fact">
-                                <span class="fact-icon" aria-hidden="true">↪</span>
-                                <div class="fact-body">
-                                    <span class="fact-label">Languages</span>
-                                    <span class="fact-value">French · English · 中文</span>
-                                </div>
-                            </div>
-
-                            <div class="interest-tags">
-                                <span class="interest-tag">#AI</span>
-                                <span class="interest-tag">#DataScience</span>
-                                <span class="interest-tag">#QuantumComputing</span>
-                                <span class="interest-tag">#Research</span>
-                            </div>
-                        </aside>
-
-                        <div class="about-narrative">
-                            <h3 class="narrative-heading">// my path</h3>
-
-                            <article class="story-step" data-step="origin">
-                                <span class="step-tag">Origin</span>
-                                <p>Coming from a high-school specialization in <strong>mathematics</strong> and <strong>physics</strong>, I joined the scientific preparatory cycle at <strong>UTBM</strong>, where I built strong foundations in applied maths and computer science.</p>
-                            </article>
-
-                            <article class="story-step" data-step="present">
-                                <span class="step-tag">Present</span>
-                                <p>After an exchange semester in <strong>Shanghai</strong> and a 6-month <strong>R&amp;D internship at Michelin</strong>, I&rsquo;m now in my <strong>specialized Data Science semester</strong> at UTBM &mdash; exploring the connections between <strong>machine learning</strong>, <strong>statistics</strong>, and <strong>quantum algorithms</strong>.</p>
-                            </article>
-
-                            <article class="story-step" data-step="future">
-                                <span class="step-tag">Future</span>
-                                <p>I aim to grow as a <strong>PHD student or a research engineer</strong>, contributing to the next generation of intelligent systems where classical machine learning meets <strong>quantum computing</strong>, in a <strong>collaborative</strong> and <strong>intercultural</strong> environment.</p>
-                            </article>
-                        </div>
+                <div class="split">
+                    <div class="split-label">
+                        <h3 class="label-title">My path</h3>
+                        <p class="interest-tags">#AI #DataScience #QuantumComputing #Research</p>
                     </div>
+                    <div class="split-body">
+                    <ol class="path">
+                        <li class="path-step">
+                            <h4 class="path-label">Origin</h4>
+                            <p>Coming from a high-school specialization in <strong>mathematics</strong> and <strong>physics</strong>, I joined the scientific preparatory cycle at <strong>UTBM</strong>, where I built strong foundations in applied maths and computer science.</p>
+                        </li>
+                        <li class="path-step">
+                            <h4 class="path-label">Present</h4>
+                            <p>After an exchange semester in <strong>Shanghai</strong> and a 6-month <strong>R&amp;D internship at Michelin</strong>, I&rsquo;m now in my <strong>specialized Data Science semester</strong> at UTBM &mdash; exploring the connections between <strong>machine learning</strong>, <strong>statistics</strong>, and <strong>quantum algorithms</strong>.</p>
+                        </li>
+                        <li class="path-step">
+                            <h4 class="path-label">Future</h4>
+                            <p>I aim to grow as a <strong>PHD student or a research engineer</strong>, contributing to the next generation of intelligent systems where classical machine learning meets <strong>quantum computing</strong>, in a <strong>collaborative</strong> and <strong>intercultural</strong> environment.</p>
+                        </li>
+                    </ol>
 
-                    <div class="now-band">
-                        <span class="now-pulse" aria-hidden="true"></span>
-                        <div class="now-content">
-                            <span class="now-label">/ NOW</span>
-                            <p>Specialized Data Science semester at <strong>UTBM</strong> &mdash; 4<sup>th</sup> year of engineering &mdash; deepening expertise in machine learning, statistics, and quantum computing.</p>
-                        </div>
+                    <div class="now">
+                        <h3 class="now-label"><span class="status-dot" aria-hidden="true"></span>Now</h3>
+                        <p class="now-text">Specialized Data Science semester at <strong>UTBM</strong> &mdash; 4<sup>th</sup> year of engineering &mdash; deepening expertise in machine learning, statistics, and quantum computing.</p>
+                    </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="section" id="skills">
-                <h2>Skills</h2>
+        <!-- ============ SKILLS ============ -->
+        <section class="section" id="skills" aria-labelledby="skills-title">
+            <div class="wrap">
+                <h2 class="section-title" id="skills-title">Skills</h2>
 
-                <div class="skills-container"> 
-                    <div class="tab-buttons">
-                        <button class="tab-button active" data-tab="ds">Data Science</button>
-                        <button class="tab-button" data-tab="ml">Machine Learning</button>
-                        <button class="tab-button" data-tab="app-maths">Applied Mathematics</button>
-                        <button class="tab-button" data-tab="quant-c">Quantum Computing</button>
-                        <button class="tab-button" data-tab="programming">Programming</button>
-                        <button class="tab-button" data-tab="dev-tools">Development Tools</button>
-                        <button class="tab-button" data-tab="lang">Language</button>  
+                <div class="split skills" data-tabs>
+                    <div class="split-label skills-tabs" role="tablist" aria-label="Skill areas">
+                        <button class="tab" type="button" role="tab" id="tab-ds" aria-controls="panel-ds" aria-selected="true">Data Science</button>
+                        <button class="tab" type="button" role="tab" id="tab-ml" aria-controls="panel-ml" aria-selected="false" tabindex="-1">Machine Learning</button>
+                        <button class="tab" type="button" role="tab" id="tab-app-maths" aria-controls="panel-app-maths" aria-selected="false" tabindex="-1">Applied Mathematics</button>
+                        <button class="tab" type="button" role="tab" id="tab-quant-c" aria-controls="panel-quant-c" aria-selected="false" tabindex="-1">Quantum Computing</button>
+                        <button class="tab" type="button" role="tab" id="tab-programming" aria-controls="panel-programming" aria-selected="false" tabindex="-1">Programming</button>
+                        <button class="tab" type="button" role="tab" id="tab-dev-tools" aria-controls="panel-dev-tools" aria-selected="false" tabindex="-1">Development Tools</button>
+                        <button class="tab" type="button" role="tab" id="tab-lang" aria-controls="panel-lang" aria-selected="false" tabindex="-1">Language</button>
                     </div>
 
-                    <div id="ds" class="tab-content active">
-                        <div class="skills-section">
-                            <!-- <h3>Data Science</h3> -->
-                            <div class="skills">
-                                <div class="skill-item"><span>Data Engineering & Cloud:</span>Google Cloud Platform, BigQuery, PySpark, Apache Cassandra, Google Spanner.</div>
-                                <div class="skill-item"><span>Data Analysis & Manipulation:</span> Python, NumPy, Pandas</div>
-                                <div class="skill-item"><span>Data Visualization:</span> Matplotlib, Seaborn, Plotly, Power BI, Folium</div>
-                                <div class="skill-item"><span>Databases:</span> PostgreSQL, MySQL, MongoDB, Firebase</div>
-                                <div class="skill-item"><span>Graph Data & Semantic Web:</span> Neo4j, Graph Data Science, SPARQL, RDF Schema, Ontologies, OWL</div>
-                            </div>
+                    <div class="split-body skills-panels">
+                        <div class="panel" role="tabpanel" id="panel-ds" aria-labelledby="tab-ds" tabindex="0">
+                            <h3 class="panel-title">Data Science</h3>
+                            <dl class="skill-list">
+                                <div class="skill"><dt>Data Engineering &amp; Cloud</dt><dd>Google Cloud Platform, BigQuery, PySpark, Apache Cassandra, Google Spanner.</dd></div>
+                                <div class="skill"><dt>Data Analysis &amp; Manipulation</dt><dd>Python, NumPy, Pandas</dd></div>
+                                <div class="skill"><dt>Data Visualization</dt><dd>Matplotlib, Seaborn, Plotly, Power BI, Folium</dd></div>
+                                <div class="skill"><dt>Databases</dt><dd>PostgreSQL, MySQL, MongoDB, Firebase</dd></div>
+                                <div class="skill"><dt>Graph Data &amp; Semantic Web</dt><dd>Neo4j, Graph Data Science, SPARQL, RDF Schema, Ontologies, OWL</dd></div>
+                            </dl>
                         </div>
-                    </div>
 
-                    <div id="ml" class="tab-content">
-                        <div class="skills-section">
-                            <!-- <h3>Artificial Intelligence</h3> -->
-                            <div class="skills">
-                                <div class="skill-item"><span>Machine Learning:</span> Scikit-learn, KNN , SVM, Gaussian Process Regression, Logistic Regression, Discriminant Analysis (LDA, QDA), Naive Bayes, Linear Regression</div>
-                                <div class="skill-item"><span>Unsupervised Learning:</span> K-means, DBSCAN, PCA, FLDA</div>
-                                <div class="skill-item"><span>Large Language Models:</span> GenAI, LangChain, Prompt Engineering, RAG, PEFT</div>
-                                <div class="skill-item"><span>Deep Learning:</span> PyTorch, CNNs, Transformers, Computer Vision</div>
-                                <div class="skill-item"><span>Model Workflow & Optimization:</span> Feature engineering, Cross-Validation, Model Selection, Transfer Learning, Fine-tuning, Data Augmentation, Multi-fidelity training.</div>
-                            </div>
+                        <div class="panel" role="tabpanel" id="panel-ml" aria-labelledby="tab-ml" tabindex="0">
+                            <h3 class="panel-title">Machine Learning</h3>
+                            <dl class="skill-list">
+                                <div class="skill"><dt>Machine Learning</dt><dd>Scikit-learn, KNN, SVM, Gaussian Process Regression, Logistic Regression, Discriminant Analysis (LDA, QDA), Naive Bayes, Linear Regression</dd></div>
+                                <div class="skill"><dt>Unsupervised Learning</dt><dd>K-means, DBSCAN, PCA, FLDA</dd></div>
+                                <div class="skill"><dt>Large Language Models</dt><dd>GenAI, LangChain, Prompt Engineering, RAG, PEFT</dd></div>
+                                <div class="skill"><dt>Deep Learning</dt><dd>PyTorch, CNNs, Transformers, Computer Vision</dd></div>
+                                <div class="skill"><dt>Model Workflow &amp; Optimization</dt><dd>Feature engineering, Cross-Validation, Model Selection, Transfer Learning, Fine-tuning, Data Augmentation, Multi-fidelity training.</dd></div>
+                            </dl>
                         </div>
-                    </div>
 
-                    <div id="quant-c" class="tab-content">
-                        <div class="skills-section">
-                            <!-- <h3>Quantum Computing</h3> -->
-                            <div class="skills">
-                                <div class="skill-item"><span>Qubit Systems and models:</span> Tensor product, Entanglement, Toffoli, Quantum Complexity</div>
-                                <div class="skill-item"><span>Quantum Cryptography:</span> BB84 protocol, RSA</div>
-                                <div class="skill-item"><span>Quantum Algorithms:</span> Deutsch, Deutsch–Jozsa, Grover, Shor, QFT</div>
-                                <div class="skill-item"><span>Quantum Machine Learning:</span> Variational Quantum Circuits, Quantum Circuit Born Machine, Ansatz</div>
-                                <div class="skill-item"><span>Quantum Frameworks:</span> PennyLane , Qiskit, MPQP</div>
-                            </div>
+                        <div class="panel" role="tabpanel" id="panel-app-maths" aria-labelledby="tab-app-maths" tabindex="0">
+                            <h3 class="panel-title">Applied Mathematics</h3>
+                            <dl class="skill-list">
+                                <div class="skill"><dt>Linear Algebra</dt><dd>Vectors, Matrices, Eigenvalues/Eigenvectors, Projections</dd></div>
+                                <div class="skill"><dt>Probability</dt><dd>Distributions, Conditional Probability</dd></div>
+                                <div class="skill"><dt>Statistics</dt><dd>Descriptive Stats, Estimation, Confidence Intervals, Regression, Maximum Likelihood Estimation, Bayesian Decision Theory, Covariance, Correlation.</dd></div>
+                                <div class="skill"><dt>Loss functions &amp; Optimizers</dt><dd>Kullback-Leibler divergence, Maximum Mean Discrepancy, Cross-Entropy, Adam, RMSprop, Cobyla, SPSA</dd></div>
+                            </dl>
                         </div>
-                    </div>
-                    
-                    <div id="app-maths" class="tab-content">
-                        <div class="skills-section">
-                            <!-- <h3>Applied Mathematics</h3> -->
-                            <div class="skills">
-                                <div class="skill-item"><span>Linear Algebra:</span> Vectors, Matrices, Eigenvalues/Eigenvectors, Projections</div>
-                                <div class="skill-item"><span>Probability:</span> Distributions, Conditional Probability</div>
-                                <div class="skill-item"><span>Statistics:</span> Descriptive Stats, Estimation, Confidence Intervals, Regression, Maximum Likelihood Estimation, Bayesian Decision Theory, Covariance, Correlation.</div>
-                                <div class="skill-item"><span>Loss functions & Optimizers:</span> Kullback-Leibler divergence, Maximum Mean Discrepancy, Cross-Entropy, Adam, RMSprop, Cobyla, SPSA </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div id="programming" class="tab-content">
-                        <div class="skills-section">
-                            <!-- <h3>Programming</h3> -->
-                            <div class="skills">
-                                <div class="skill-item"><span>Languages:</span> Python, C, C++, Java, Kotlin, HTML, CSS, JavaScript, PHP, SQL</div>
-                                <div class="skill-item"><span>Frameworks:</span>Symfony, Angular, Tkinter</div>
-                                <div class="skill-item"><span>Databases:</span> PostgreSQL, MySQL, Firebase, MongoDB</div>
-                            </div>
+                        <div class="panel" role="tabpanel" id="panel-quant-c" aria-labelledby="tab-quant-c" tabindex="0">
+                            <h3 class="panel-title">Quantum Computing</h3>
+                            <dl class="skill-list">
+                                <div class="skill"><dt>Qubit Systems and models</dt><dd>Tensor product, Entanglement, Toffoli, Quantum Complexity</dd></div>
+                                <div class="skill"><dt>Quantum Cryptography</dt><dd>BB84 protocol, RSA</dd></div>
+                                <div class="skill"><dt>Quantum Algorithms</dt><dd>Deutsch, Deutsch–Jozsa, Grover, Shor, QFT</dd></div>
+                                <div class="skill"><dt>Quantum Machine Learning</dt><dd>Variational Quantum Circuits, Quantum Circuit Born Machine, Ansatz</dd></div>
+                                <div class="skill"><dt>Quantum Frameworks</dt><dd>PennyLane, Qiskit, MPQP</dd></div>
+                            </dl>
                         </div>
-                    </div>
-            
-                    <div id="dev-tools" class="tab-content">
-                        <div class="skills-section">
-                            <!-- <h3>Development Tools</h3> -->
-                            <div class="skills">
-                                <div class="skill-item"><span>Version Control:</span> Git, GitHub, GitLab</div>
-                                <div class="skill-item"><span>IDEs:</span> VS Code, JetBrains, Jupyter Notebooks, Android Studio, Google Colab</div>
-                                <div class="skill-item"><span>Containerization & Orchestration:</span> Docker, Docker Compose</div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div id="lang" class="tab-content">
-                        <div class="skills-section">
-                            <!-- <h3>Language</h3> -->
-                            <div class="languages">
-                                <div class="language-row">
-                                    <img src="assets/language/french.png" alt="French" class="language-flag" />
-                                    <span class="language-name">French - Native (C2)</span>
-                                    <div class="level-gauge" aria-label="C2 (6/6)">
-                                        <span class="segment filled" title="A1"></span>
-                                        <span class="segment filled" title="A2"></span>
-                                        <span class="segment filled" title="B1"></span>
-                                        <span class="segment filled" title="B2"></span>
-                                        <span class="segment filled" title="C1"></span>
-                                        <span class="segment filled" title="C2"></span>
-                                    </div>
-                                </div>
-                                <div class="language-row">
-                                    <img src="assets/language/english.png" alt="English" class="language-flag" />
-                                    <span class="language-name">English - Fluent (C1)</span>
-                                    <div class="level-gauge" aria-label="C1 (5/6)">
-                                        <span class="segment filled" title="A1"></span>
-                                        <span class="segment filled" title="A2"></span>
-                                        <span class="segment filled" title="B1"></span>
-                                        <span class="segment filled" title="B2"></span>
-                                        <span class="segment filled" title="C1"></span>
-                                        <span class="segment" title="C2"></span>
-                                    </div>
-                                </div>
-                                <div class="language-row">
-                                    <img src="assets/language/chinese.png" alt="Chinese" class="language-flag" />
-                                    <span class="language-name">Chinese - Intermediate (HSK3)</span>
-                                    <div class="level-gauge" aria-label="B1 (3/6)">
-                                        <span class="segment filled" title="A1"></span>
-                                        <span class="segment filled" title="A2"></span>
-                                        <span class="segment filled" title="B1"></span>
-                                        <span class="segment" title="B2"></span>
-                                        <span class="segment" title="C1"></span>
-                                        <span class="segment" title="C2"></span>
-                                    </div>
-                                </div>
-                                <div class="language-row">
-                                    <img src="assets/language/german.png" alt="German" class="language-flag" />
-                                    <span class="language-name">German - Elementary (A2)</span>
-                                    <div class="level-gauge" aria-label="A2 (2/6)">
-                                        <span class="segment filled" title="A1"></span>
-                                        <span class="segment filled" title="A2"></span>
-                                        <span class="segment" title="B1"></span>
-                                        <span class="segment" title="B2"></span>
-                                        <span class="segment" title="C1"></span>
-                                        <span class="segment" title="C2"></span>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="panel" role="tabpanel" id="panel-programming" aria-labelledby="tab-programming" tabindex="0">
+                            <h3 class="panel-title">Programming</h3>
+                            <dl class="skill-list">
+                                <div class="skill"><dt>Languages</dt><dd>Python, C, C++, Java, Kotlin, HTML, CSS, JavaScript, PHP, SQL</dd></div>
+                                <div class="skill"><dt>Frameworks</dt><dd>Symfony, Angular, Tkinter</dd></div>
+                                <div class="skill"><dt>Databases</dt><dd>PostgreSQL, MySQL, Firebase, MongoDB</dd></div>
+                            </dl>
+                        </div>
+
+                        <div class="panel" role="tabpanel" id="panel-dev-tools" aria-labelledby="tab-dev-tools" tabindex="0">
+                            <h3 class="panel-title">Development Tools</h3>
+                            <dl class="skill-list">
+                                <div class="skill"><dt>Version Control</dt><dd>Git, GitHub, GitLab</dd></div>
+                                <div class="skill"><dt>IDEs</dt><dd>VS Code, JetBrains, Jupyter Notebooks, Android Studio, Google Colab</dd></div>
+                                <div class="skill"><dt>Containerization &amp; Orchestration</dt><dd>Docker, Docker Compose</dd></div>
+                            </dl>
+                        </div>
+
+                        <div class="panel" role="tabpanel" id="panel-lang" aria-labelledby="tab-lang" tabindex="0">
+                            <h3 class="panel-title">Language</h3>
+                            <ul class="languages">
+                                <li class="language language-scale" aria-hidden="true">
+                                    <span class="gauge gauge-legend"><i>A1</i><i>A2</i><i>B1</i><i>B2</i><i>C1</i><i>C2</i></span>
+                                </li>
+                                <li class="language">
+                                    <span class="language-name">French</span>
+                                    <span class="language-level">Native (C2)</span>
+                                    <span class="gauge" role="img" aria-label="C2 (6/6)"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>
+                                </li>
+                                <li class="language">
+                                    <span class="language-name">English</span>
+                                    <span class="language-level">Fluent (C1)</span>
+                                    <span class="gauge" role="img" aria-label="C1 (5/6)"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
+                                </li>
+                                <li class="language">
+                                    <span class="language-name">Chinese</span>
+                                    <span class="language-level">Intermediate (HSK3)</span>
+                                    <span class="gauge" role="img" aria-label="B1 (3/6)"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span>
+                                </li>
+                                <li class="language">
+                                    <span class="language-name">German</span>
+                                    <span class="language-level">Elementary (A2)</span>
+                                    <span class="gauge" role="img" aria-label="A2 (2/6)"><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i></span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="section" id="timeline">
-                <h2>Timeline</h2>
-                <div class="timeline-labels">
-                    <span class="label academic">Academic</span>
-                    <span class="label professional">Professional</span>
+        </section>
+
+        <!-- ============ TIMELINE ============ -->
+        <section class="section" id="timeline" aria-labelledby="timeline-title">
+            <div class="wrap">
+                <h2 class="section-title" id="timeline-title">Timeline</h2>
+
+                <div class="tracks">
+
+                    <!-- Professional track, most recent first -->
+                    <div class="track">
+                        <h3 class="track-title">Professional</h3>
+                        <ol class="track-list" reversed>
+
+                            <li class="entry">
+                                <img class="entry-logo" src="assets/opt/timeline/hnfc.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
+                                <h4 class="entry-title">Innovation Hackathlon Team Leader</h4>
+                                <p class="entry-org">Innovation Crunch Time - HNFC</p>
+                                <p class="entry-meta">
+                                    <span>March 2026 (1 week)</span>
+                                    <span>Belfort | France</span>
+                                </p>
+                                <div class="entry-text">
+                                    <p>Europe's biggest university technology challenge, 2026 edition</p>
+                                    <ul>
+                                        <li>5 days innovation challenge focused on Design Thinking</li>
+                                        <li>1600 multidisciplinary students forming teams of 10</li>
+                                        <li>Leading a team of students under the supervision of Hopital Nord Franche Comté.</li>
+                                        <li>Developed a low-cost syringe heating solution using CATIA modeling and iterative prototyping.</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="entry">
+                                <img class="entry-logo" src="assets/opt/timeline/michelin.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
+                                <h4 class="entry-title">AI Engineer Internship, R&amp;D</h4>
+                                <p class="entry-org">Michelin</p>
+                                <p class="entry-meta">
+                                    <span>September 2025 – February 2026 (6 months)</span>
+                                    <span>Clermont-Ferrand (Ladoux R&amp;D Center) | France</span>
+                                </p>
+                                <div class="entry-text">
+                                    <p>Joined two teams at Michelin's main R&amp;D center, Data Science &amp; Simulation and Tire Performance. I built a validation framework comparing Michelin's in-house finite element solver with its AI prediction model on rolling resistance and tire dimensions, to decide which tool engineers can trust for each design use case.</p>
+                                    <details class="more">
+                                        <summary><span class="more-open">See more</span><span class="more-close">See less</span></summary>
+                                        <ul>
+                                            <li><strong>Statistical validation:</strong> Python toolkit for model-vs-measurement agreement (Bland-Altman, Deming regression with per-point error variance, residual and QQ analysis, error heatmaps). Showed the AI model's error was on par with test-machine repeatability, about 15x lower than the raw physics solver.</li>
+                                            <li><strong>Ranking reliability:</strong> formalized a "model critical difference" to decide when a model can reliably rank two tire designs, using local uncertainty estimates (confidence intervals, LOWESS on residuals) and a bisection calibration capping decision risk at 5%. Evaluated on up to 60,000 tire pairs.</li>
+                                            <li><strong>Explainable AI:</strong> surrogate Random Forests with SHAP, PDP/ICE and K-Means clustering of error profiles revealed a geometry-driven bias in the physics solver (overestimates on large tires, underestimates on small ones), handed to the modeling team as an improvement lead.</li>
+                                            <li><strong>Business process:</strong> first statistical validation of the reference-tire calibration used by design teams (error cut by 66%), then benchmarked alternative reference-selection strategies that lowered error by a further 28%.</li>
+                                            <li><strong>Data quality:</strong> caught a unit labeling error in the historical dataset that invalidated the initial comparison, confirmed it with domain experts and rebuilt the analysis.</li>
+                                            <li><strong>Delivery:</strong> documented GitLab repository (ETL scripts, reusable validation modules, notebooks) and regular presentations to data science, performance and design teams, including the Pune (India) team.</li>
+                                        </ul>
+                                        <p><strong>Stack:</strong> Python, Pandas, NumPy, Scikit-learn, SHAP, Matplotlib, Git/GitLab</p>
+                                    </details>
+                                </div>
+                            </li>
+
+                            <li class="entry">
+                                <img class="entry-logo" src="assets/opt/timeline/gevernova.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
+                                <h4 class="entry-title">Innovation Hackathlon Team Leader</h4>
+                                <p class="entry-org">Innovation Crunch Time - GE Vernova</p>
+                                <p class="entry-meta">
+                                    <span>March 2025 (1 week)</span>
+                                    <span>Belfort | France</span>
+                                </p>
+                                <div class="entry-text">
+                                    <p>Europe's biggest university technology challenge, 2025 edition</p>
+                                    <ul>
+                                        <li>Leading a team of 10 students on an HR project to optimize skills management.</li>
+                                        <li>Project supervised by General Electric Vernova.</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="entry">
+                                <img class="entry-logo" src="assets/opt/timeline/utseus.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
+                                <h4 class="entry-title">Innovation Bootcamp</h4>
+                                <p class="entry-org">Université de Technologie Sino Européenne de Shanghai</p>
+                                <p class="entry-meta">
+                                    <span>June 2024 – July 2024 (1 month)</span>
+                                    <span>Shanghai | China</span>
+                                </p>
+                                <div class="entry-text">
+                                    <ul>
+                                        <li>One month of intensive work in an intercultural team, presented to an experienced jury.</li>
+                                        <li>Development of a startup project for a banking system in disadvantaged countries.</li>
+                                        <li>Entrepreunership, WEB Development, Team Work, Innovation</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="entry">
+                                <img class="entry-logo" src="assets/opt/timeline/forvia.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
+                                <h4 class="entry-title">Innovation Hackathlon - Forvia</h4>
+                                <p class="entry-org">Innovation Crunch Time</p>
+                                <p class="entry-meta">
+                                    <span>March 2023 (1 week)</span>
+                                    <span>Belfort | France</span>
+                                </p>
+                                <div class="entry-text">
+                                    <p>Europe's biggest university technology challenge, 2023 edition</p>
+                                    <ul>
+                                        <li>Machine learning project to design a car seat that can be adapted to all body types.</li>
+                                        <li>Working in a team of 10 students supervised by Forvia.</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="entry">
+                                <img class="entry-logo" src="assets/opt/timeline/ge.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
+                                <h4 class="entry-title">Operator Internship</h4>
+                                <p class="entry-org">General Electric</p>
+                                <p class="entry-meta">
+                                    <span>January 2023 – February 2023 (1 month)</span>
+                                    <span>Belfort | France</span>
+                                </p>
+                                <div class="entry-text">
+                                    <p>One-month internship on the Belfort site, which produces the 9HA, the world's largest gas turbine. I rotated across the turbine assembly line and the test benches.</p>
+                                    <details class="more">
+                                        <summary><span class="more-open">See more</span><span class="more-close">See less</span></summary>
+                                        <ul>
+                                            <li><strong>Quality control:</strong> penetrant testing of welded turbine parts, injector flow tests, and insulation and continuity checks on wiring.</li>
+                                            <li><strong>Metrology:</strong> calibrated pressure gauges on the test benches and wrote the measurement reports.</li>
+                                            <li><strong>Lean project:</strong> helped redesign the layout of an assembly area, including space measurements, a conveyor mock-up and new workstation zones.</li>
+                                        </ul>
+                                    </details>
+                                </div>
+                            </li>
+
+                        </ol>
+                    </div>
+
+                    <!-- Academic track, most recent first -->
+                    <div class="track">
+                        <h3 class="track-title">Academic</h3>
+                        <ol class="track-list" reversed>
+
+                            <li class="entry">
+                                <img class="entry-logo" src="assets/opt/timeline/utbm.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
+                                <h4 class="entry-title">Master degree in Engineering, Data Science</h4>
+                                <p class="entry-org">Université de Technologie de Belfort-Montbéliard</p>
+                                <p class="entry-meta">
+                                    <span>September 2024 – August 2027 (3 years)</span>
+                                    <span>Belfort | France</span>
+                                </p>
+                                <div class="entry-text">
+                                    <p>Computer science engineering degree with a Data Science specialization, combining coursework, team projects and two 6-month industrial internships.</p>
+                                    <details class="more">
+                                        <summary><span class="more-open">See more</span><span class="more-close">See less</span></summary>
+
+                                        <p><strong>Semester 1 (Fall 2024): Software and AI foundations</strong></p>
+                                        <ul>
+                                            <li>Object-oriented programming in C++ and Java with UML modeling.</li>
+                                            <li>Artificial intelligence fundamentals: search, logic and dedicated languages.</li>
+                                            <li>Operating systems and system programming under Linux.</li>
+                                            <li>Financial management and investment.</li>
+                                        </ul>
+
+                                        <p><strong>Semester 2 (Spring 2025): Algorithms, web and mobile</strong></p>
+                                        <ul>
+                                            <li>Classical and quantum algorithms.</li>
+                                            <li>Information systems design.</li>
+                                            <li>Web development, standard and advanced.</li>
+                                            <li>Android development in Kotlin.</li>
+                                            <li>Business English.</li>
+                                        </ul>
+
+                                        <p><strong>Semester 3 (Fall 2025): Industrial internship</strong></p>
+                                        <ul>
+                                            <li>6-month AI Engineer internship at Michelin.</li>
+                                        </ul>
+
+                                        <p><strong>Semester 4 (Spring 2026): Data Science specialization</strong></p>
+                                        <ul>
+                                            <li>Foundations of data science and machine learning.</li>
+                                            <li>Business intelligence and big data: data warehousing, OLAP, cloud analytics.</li>
+                                            <li>Intelligent data analysis and management.</li>
+                                            <li>Blockchain and distributed systems.</li>
+                                            <li>Data Science project in a team of five.</li>
+                                            <li>Individual deep learning project on multi-fidelity training.</li>
+                                            <li>HSK Chinese exam preparation.</li>
+                                        </ul>
+
+                                        <p><strong>Semester 5 (Fall 2026): Exchange in Shanghai</strong></p>
+                                        <ul>
+                                            <li>IE² Master semester at Shanghai University.</li>
+                                        </ul>
+
+                                        <p><strong>Semester 6 (Spring 2027): End-of-studies internship</strong></p>
+                                        <ul>
+                                            <li>Currently looking for End-of-studies internship.</li>
+                                        </ul>
+                                    </details>
+                                </div>
+                            </li>
+
+                            <li class="entry">
+                                <img class="entry-logo" src="assets/opt/timeline/utseus.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
+                                <h4 class="entry-title">Master Semester (IE<sup>2</sup>) - Innovation &amp; Entrepreneurship in Intercultural Environments</h4>
+                                <p class="entry-org">Shanghai University (<span lang="zh">上海大学</span>) - UTSEUS</p>
+                                <p class="entry-meta">
+                                    <span>September 2026 – January 2027 (5 months)</span>
+                                    <span>Shanghai | China</span>
+                                </p>
+                                <div class="entry-text">
+                                    <p>Master-level university diploma program taught in English, in an international cohort, delivered by UTSEUS (Sino-French joint school of Shanghai University).</p>
+                                    <details class="more">
+                                        <summary><span class="more-open">See more</span><span class="more-close">See less</span></summary>
+                                        <ul>
+                                            <li>Data Science and Machine Learning applied to market studies and IoT.</li>
+                                            <li>IoT prototyping: design process, MVP building and fast-prototyping (3D modeling, 3D printing).</li>
+                                            <li>Entrepreneurship in China, lean startup method, agile project management and pitching.</li>
+                                            <li>Intercultural communication, international management and Chinese Mandarin.</li>
+                                        </ul>
+                                    </details>
+                                </div>
+                            </li>
+
+                            <li class="entry">
+                                <img class="entry-logo" src="assets/opt/timeline/shanguni.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
+                                <h4 class="entry-title">Scientific Preparatory Cycle (Exchange Semester)</h4>
+                                <p class="entry-org">Shanghai University (<span lang="zh">上海大学</span>)</p>
+                                <p class="entry-meta">
+                                    <span>February 2024 – June 2024 (5 months)</span>
+                                    <span>Shanghai | China</span>
+                                </p>
+                                <div class="entry-text">
+                                    <ul>
+                                        <li>Focus on computer science theory, Data Science, applied mathematics and chinese language.</li>
+                                        <li>Entrepreneurship-based group projects with international students.</li>
+                                        <li>Data Science project to optimize green spaces repartition in the megacity of Shanghai.</li>
+                                    </ul>
+                                    <details class="more">
+                                        <summary><span class="more-open">See more</span><span class="more-close">See less</span></summary>
+                                        <p>Courses (taught in English):</p>
+                                        <ul>
+                                            <li>Elementary numerical analysis</li>
+                                            <li>Introduction to computer science</li>
+                                            <li>Urban analysis for engineers (green spaces project)</li>
+                                            <li>Winning business plans</li>
+                                            <li>Chinese Mandarin for beginners</li>
+                                        </ul>
+                                    </details>
+                                </div>
+                            </li>
+
+                            <li class="entry">
+                                <img class="entry-logo" src="assets/opt/timeline/utbm.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
+                                <h4 class="entry-title">Scientific Preparatory Cycle</h4>
+                                <p class="entry-org">Université de Technologie de Belfort-Montbéliard</p>
+                                <p class="entry-meta">
+                                    <span>September 2022 – June 2024 (2 years)</span>
+                                    <span>Belfort | France</span>
+                                </p>
+                                <div class="entry-text">
+                                    <p>Two-year integrated preparatory program building the foundations in mathematics, physics and computer science before the engineering specialization.</p>
+                                    <details class="more">
+                                        <summary><span class="more-open">See more</span><span class="more-close">See less</span></summary>
+
+                                        <p><strong>Semester 1 (Fall 2022)</strong></p>
+                                        <ul>
+                                            <li>Algebra and analysis, mathematical tools applied to physics.</li>
+                                            <li>Computer science fundamentals for engineers.</li>
+                                        </ul>
+
+                                        <p><strong>Semester 2 (Spring 2023)</strong></p>
+                                        <ul>
+                                            <li>Algebra and analysis (level 2), point mechanics.</li>
+                                            <li>Algorithms and programming.</li>
+                                            <li>Practical English with international certification (Cambridge Linguaskill Business).</li>
+                                            <li>Management and industry.</li>
+                                        </ul>
+
+                                        <p><strong>Semester 3 (Fall 2023)</strong></p>
+                                        <ul>
+                                            <li>Second-year algebra and analysis.</li>
+                                            <li>Introduction to databases, applied programming.</li>
+                                            <li>Linux operating system and system programming in C.</li>
+                                        </ul>
+
+                                        <p><strong>Semester 4 (Spring 2024)</strong></p>
+                                        <ul>
+                                            <li>Exchange semester at Shanghai University.</li>
+                                        </ul>
+                                    </details>
+                                </div>
+                            </li>
+
+                            <li class="entry">
+                                <img class="entry-logo" src="assets/opt/timeline/aragon.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
+                                <h4 class="entry-title">High School Degree (Baccalauréat)</h4>
+                                <p class="entry-org">Lycée Polyvalent Louis Aragon</p>
+                                <p class="entry-meta">
+                                    <span>September 2019 – July 2022 (3 years)</span>
+                                    <span>Héricourt | France</span>
+                                </p>
+                                <div class="entry-text">
+                                    <details class="more">
+                                        <summary><span class="more-open">See more</span><span class="more-close">See less</span></summary>
+                                        <p>Specialization: </p>
+                                        <ul>
+                                            <li>Mathematics</li>
+                                            <li>Physics and Chemistry</li>
+                                            <li>English</li>
+                                        </ul>
+                                        <p>Option: </p>
+                                        <ul>
+                                            <li>Advanced Mathematics</li>
+                                        </ul>
+                                        <p>Result: </p>
+                                        <ul>
+                                            <li>Awarded with high honors</li>
+                                            <li>19/20 in mathematics specialization</li>
+                                            <li>18/20 in physics and chemistry specialization</li>
+                                        </ul>
+                                    </details>
+                                </div>
+                            </li>
+
+                        </ol>
+                    </div>
+
                 </div>
-                <ul class="timeline">
-                    
-                    <li class="entry academic" data-position="1">
-                        <div class="entry-image">
-                            <img loading="lazy" data-src="assets/timeline/aragon.png" alt="Aragon Logo" />
-                        </div>
-                        <div class="entry-content">
-                            <div class="entry-header">
-                                <h3>High School Degree (Baccalauréat)</h3>
-                                <h4 class="organization">Lycée Polyvalent Louis Aragon</h4>
-                                <p class="entry-meta">
-                                    <span class="year">September 2019 – July 2022 (3 years)</span>
-                                    <span class="location">Héricourt | France</span>
-                                </p>
-                            </div>
-                            <p>Specialization: </p>
-                            <ul>
-                                <li>Mathematics</li>
-                                <li>Physics and Chemistry</li>
-                                <li>English</li>
-                            </ul>
-                            <p>Option: </p>
-                            <ul>
-                                <li>Advanced Mathematics</li>
-                            </ul>
-                            <p>Result: </p>
-                            <ul>
-                                <li>Awarded with high honors</li>
-                                <li>19/20 in mathematics specialization</li>
-                                <li>18/20 in physics and chemistry specialization</li>
-                            </ul>
-                        </div>
-                        <div class="entry-dot"></div>
-                    </li>
-
-<li class="entry academic" data-position="2,3, 4">
-    <div class="entry-image">
-        <img loading="lazy" data-src="assets/timeline/UTBM.png" alt="UTBM Logo" />
-    </div>
-    <div class="entry-content">
-        <div class="entry-header">
-            <h3>Scientific Preparatory Cycle</h3>
-            <h4 class="organization">Université de Technologie de Belfort-Montbéliard</h4>
-            <p class="entry-meta">
-                <span class="year">September 2022 – June 2024 (2 years)</span>
-                <span class="location">Belfort | France</span>
-            </p>
-        </div>
-        <p>Two-year integrated preparatory program building the foundations in mathematics, physics and computer science before the engineering specialization.</p>
-
-        <p><strong>Semester 1 (Fall 2022)</strong></p>
-        <ul>
-            <li>Algebra and analysis, mathematical tools applied to physics.</li>
-            <li>Computer science fundamentals for engineers.</li>
-        </ul>
-
-        <p><strong>Semester 2 (Spring 2023)</strong></p>
-        <ul>
-            <li>Algebra and analysis (level 2), point mechanics.</li>
-            <li>Algorithms and programming.</li>
-            <li>Practical English with international certification (Cambridge Linguaskill Business).</li>
-            <li>Management and industry.</li>
-        </ul>
-
-        <p><strong>Semester 3 (Fall 2023)</strong></p>
-        <ul>
-            <li>Second-year algebra and analysis.</li>
-            <li>Introduction to databases, applied programming.</li>
-            <li>Linux operating system and system programming in C.</li>
-        </ul>
-
-        <p><strong>Semester 4 (Spring 2024)</strong></p>
-        <ul>
-            <li>Exchange semester at Shanghai University.</li>
-        </ul>
-    </div>
-    <div class="entry-dot"></div>
-</li>
-
-                    <li class="entry professional" data-position="2">
-    <div class="entry-image">
-        <img loading="lazy" data-src="assets/timeline/GE.jpg" alt="GE Logo" />
-    </div>
-    <div class="entry-content">
-        <div class="entry-header">
-            <h3>Operator Internship</h3>
-            <h4 class="organization">General Electric</h4>
-            <p class="entry-meta">
-                <span class="year">January 2023 – February 2023 (1 month)</span>
-                <span class="location">Belfort | France</span>
-            </p>
-        </div>
-        <p>One-month internship on the Belfort site, which produces the 9HA, the world's largest gas turbine. I rotated across the turbine assembly line and the test benches.</p>
-        <ul>
-            <li><strong>Quality control:</strong> penetrant testing of welded turbine parts, injector flow tests, and insulation and continuity checks on wiring.</li>
-            <li><strong>Metrology:</strong> calibrated pressure gauges on the test benches and wrote the measurement reports.</li>
-            <li><strong>Lean project:</strong> helped redesign the layout of an assembly area, including space measurements, a conveyor mock-up and new workstation zones.</li>
-        </ul>
-    </div>
-    <div class="entry-dot"></div>
-</li>
-
-                    <li class="entry professional" data-position="3">
-                        <div class="entry-image">
-                            <img loading="lazy" data-src="assets/timeline/forvia.png" alt="Forvia Logo" />
-                        </div>
-                        <div class="entry-content">
-                            <div class="entry-header">
-                                <h3>Innovation Hackathlon - Forvia</h3>
-                                <h4 class="organization">Innovation Crunch Time</h4>
-                                <p class="entry-meta">
-                                    <span class="year">March 2023 (1 week)</span>
-                                    <span class="location">Belfort | France</span>
-                                </p>
-                            </div>
-                            <p>Europe's biggest university technology challenge, 2023 edition</p>
-                            <ul>
-                                <li>Machine learning project to design a car seat that can be adapted to all body types.</li>
-                                <li>Working in a team of 10 students supervised by Forvia.</li>
-                            </ul>
-                        </div>
-                        <div class="entry-dot"></div>
-                    </li>
-
-                    <li class="entry professional" data-position="7">
-                        <div class="entry-image">
-                            <img loading="lazy" data-src="assets/timeline/GEVernova.jpeg" alt="GE Vernova Logo" />
-                        </div>
-                        <div class="entry-content">
-                            <div class="entry-header">
-                                <h3>Innovation Hackathlon Team Leader</h3>
-                                <h4 class="organization">Innovation Crunch Time - GE Vernova</h4>
-                                <p class="entry-meta">
-                                    <span class="year">March 2025 (1 week)</span>
-                                    <span class="location">Belfort | France</span>
-                                </p>
-                            </div>
-                            <p>Europe's biggest university technology challenge, 2025 edition</p>
-                            <ul>
-                                <li>Leading a team of 10 students on an HR project to optimize skills management.</li>
-                                <li>Project supervised by General Electric Vernova.</li>
-                            </ul>
-                        </div>
-                        <div class="entry-dot"></div>
-                    </li>
-
-                 <li class="entry academic" data-position="5">
-    <div class="entry-image">
-        <img loading="lazy" data-src="assets/timeline/shanguni.png" alt="Shanghai University Logo" />
-    </div>
-    <div class="entry-content">
-        <div class="entry-header">
-            <h3>Scientific Preparatory Cycle (Exchange Semester)</h3>
-            <h4 class="organization">Shanghai University (上海大学)</h4>
-            <p class="entry-meta">
-                <span class="year">February 2024 – June 2024 (5 months)</span>
-                <span class="location">Shanghai | China</span>
-            </p>
-        </div>
-        <ul>
-            <li>Focus on computer science theory, Data Science, applied mathematics and chinese language.</li>
-            <li>Entrepreneurship-based group projects with international students.</li>
-            <li>Data Science project to optimize green spaces repartition in the megacity of Shanghai.</li>
-        </ul>
-        <p>Courses (taught in English):</p>
-        <ul>
-            <li>Elementary numerical analysis</li>
-            <li>Introduction to computer science</li>
-            <li>Urban analysis for engineers (green spaces project)</li>
-            <li>Winning business plans</li>
-            <li>Chinese Mandarin for beginners</li>
-        </ul>
-    </div>
-    <div class="entry-dot"></div>
-</li>
-
-                    <li class="entry professional" data-position="6">
-                        <div class="entry-image">
-                            <img loading="lazy" data-src="assets/timeline/Utseus.png" alt="Utseus Logo" />
-                        </div>
-                        <div class="entry-content">
-                            <div class="entry-header">
-                                <h3>Innovation Bootcamp</h3>
-                                <h4 class="organization">Université de Technologie Sino Européenne de Shanghai</h4>
-                                <p class="entry-meta">
-                                    <span class="year">June 2024 – July 2024 (1 month)</span>
-                                    <span class="location">Shanghai | China</span>
-                                </p>
-                            </div>
-                            <ul>
-                                <li>One month of intensive work in an intercultural team, presented to an experienced jury.</li>
-                                <li>Development of a startup project for a banking system in disadvantaged countries.</li>
-                                <li>Entrepreunership, WEB Development, Team Work, Innovation</li>
-                            </ul>
-                        </div>
-                        <div class="entry-dot"></div>
-                    </li>
-
-<li class="entry academic" data-position="11">
-    <div class="entry-image">
-        <img loading="lazy" data-src="assets/timeline/UTBM.png" alt="UTBM Logo" />
-    </div>
-    <div class="entry-content">
-        <div class="entry-header">
-            <h3>Master degree in Engineering, Data Science</h3>
-            <h4 class="organization">Université de Technologie de Belfort-Montbéliard</h4>
-            <p class="entry-meta">
-                <span class="year">September 2024 – August 2027 (3 years)</span>
-                <span class="location">Belfort | France</span>
-            </p>
-        </div>
-        <p>Computer science engineering degree with a Data Science specialization, combining coursework, team projects and two 6-month industrial internships.</p>
-
-        <p><strong>Semester 1 (Fall 2024): Software and AI foundations</strong></p>
-        <ul>
-            <li>Object-oriented programming in C++ and Java with UML modeling.</li>
-            <li>Artificial intelligence fundamentals: search, logic and dedicated languages.</li>
-            <li>Operating systems and system programming under Linux.</li>
-            <li>Financial management and investment.</li>
-        </ul>
-
-        <p><strong>Semester 2 (Spring 2025): Algorithms, web and mobile</strong></p>
-        <ul>
-            <li>Classical and quantum algorithms.</li>
-            <li>Information systems design.</li>
-            <li>Web development, standard and advanced.</li>
-            <li>Android development in Kotlin.</li>
-            <li>Business English.</li>
-        </ul>
-
-        <p><strong>Semester 3 (Fall 2025): Industrial internship</strong></p>
-        <ul>
-            <li>6-month AI Engineer internship at Michelin.</li>
-        </ul>
-
-        <p><strong>Semester 4 (Spring 2026): Data Science specialization</strong></p>
-        <ul>
-            <li>Foundations of data science and machine learning.</li>
-            <li>Business intelligence and big data: data warehousing, OLAP, cloud analytics.</li>
-            <li>Intelligent data analysis and management.</li>
-            <li>Blockchain and distributed systems.</li>
-            <li>Data Science project in a team of five.</li>
-            <li>Individual deep learning project on multi-fidelity training.</li>
-            <li>HSK Chinese exam preparation.</li>
-        </ul>
-
-        <p><strong>Semester 5 (Fall 2026): Exchange in Shanghai</strong></p>
-        <ul>
-            <li>IE² Master semester at Shanghai University.</li>
-        </ul>
-
-        <p><strong>Semester 6 (Spring 2027): End-of-studies internship</strong></p>
-        <ul>
-            <li>Currently looking for End-of-studies internship.</li>
-        </ul>
-    </div>
-    <div class="entry-dot"></div>
-</li>
-
-                    <li class="entry professional" data-position="8">
-    <div class="entry-image">
-        <img loading="lazy" data-src="assets/timeline/Michelin.png" alt="Michelin Logo" />
-    </div>
-    <div class="entry-content">
-        <div class="entry-header">
-            <h3>AI Engineer Internship, R&amp;D</h3>
-            <h4 class="organization">Michelin</h4>
-            <p class="entry-meta">
-                <span class="year">September 2025 – February 2026 (6 months)</span>
-                <span class="location">Clermont-Ferrand (Ladoux R&amp;D Center) | France</span>
-            </p>
-        </div>
-        <p>Joined two teams at Michelin's main R&amp;D center, Data Science &amp; Simulation and Tire Performance. I built a validation framework comparing Michelin's in-house finite element solver with its AI prediction model on rolling resistance and tire dimensions, to decide which tool engineers can trust for each design use case.</p>
-        <ul>
-            <li><strong>Statistical validation:</strong> Python toolkit for model-vs-measurement agreement (Bland-Altman, Deming regression with per-point error variance, residual and QQ analysis, error heatmaps). Showed the AI model's error was on par with test-machine repeatability, about 15x lower than the raw physics solver.</li>
-            <li><strong>Ranking reliability:</strong> formalized a "model critical difference" to decide when a model can reliably rank two tire designs, using local uncertainty estimates (confidence intervals, LOWESS on residuals) and a bisection calibration capping decision risk at 5%. Evaluated on up to 60,000 tire pairs.</li>
-            <li><strong>Explainable AI:</strong> surrogate Random Forests with SHAP, PDP/ICE and K-Means clustering of error profiles revealed a geometry-driven bias in the physics solver (overestimates on large tires, underestimates on small ones), handed to the modeling team as an improvement lead.</li>
-            <li><strong>Business process:</strong> first statistical validation of the reference-tire calibration used by design teams (error cut by 66%), then benchmarked alternative reference-selection strategies that lowered error by a further 28%.</li>
-            <li><strong>Data quality:</strong> caught a unit labeling error in the historical dataset that invalidated the initial comparison, confirmed it with domain experts and rebuilt the analysis.</li>
-            <li><strong>Delivery:</strong> documented GitLab repository (ETL scripts, reusable validation modules, notebooks) and regular presentations to data science, performance and design teams, including the Pune (India) team.</li>
-        </ul>
-        <p><strong>Stack:</strong> Python, Pandas, NumPy, Scikit-learn, SHAP, Matplotlib, Git/GitLab</p>
-    </div>
-    <div class="entry-dot"></div>
-</li>
-
-                    <li class="entry professional" data-position="9">
-                        <div class="entry-image">
-                            <img loading="lazy" data-src="assets/timeline/hnfc.png" alt="Crunch Time Logo" />
-                        </div>
-                        <div class="entry-content">
-                            <div class="entry-header">
-                                <h3>Innovation Hackathlon Team Leader</h3>
-                                <h4 class="organization">Innovation Crunch Time - HNFC</h4>
-                                <p class="entry-meta">
-                                    <span class="year">March 2026 (1 week)</span>
-                                    <span class="location">Belfort | France</span>
-                                </p>
-                            </div>
-                            <p>Europe's biggest university technology challenge, 2026 edition</p>
-                            <ul>
-                                <li>5 days innovation challenge focused on Design Thinking</li>
-                                <li>1600 multidisciplinary students forming teams of 10</li>
-                                <li>Leading a team of students under the supervision of Hopital Nord Franche Comté.</li>
-                                <li>Developed a low-cost syringe heating solution using CATIA modeling and iterative prototyping.</li>
-                            </ul>
-                        </div>
-                        <div class="entry-dot"></div>
-                    </li>
-
-                    <li class="entry academic" data-position="10">
-    <div class="entry-image">
-        <img loading="lazy" data-src="assets/timeline/Utseus.png" alt="UTSEUS Logo" />
-    </div>
-    <div class="entry-content">
-        <div class="entry-header">
-            <h3>Master Semester (IE<sup>2</sup>) - Innovation &amp; Entrepreneurship in Intercultural Environments</h3>
-            <h4 class="organization">Shanghai University (上海大学) - UTSEUS</h4>
-            <p class="entry-meta">
-                <span class="year">September 2026 – January 2027 (5 months)</span>
-                <span class="location">Shanghai | China</span>
-            </p>
-        </div>
-        <p>Master-level university diploma program taught in English, in an international cohort, delivered by UTSEUS (Sino-French joint school of Shanghai University).</p>
-        <ul>
-            <li>Data Science and Machine Learning applied to market studies and IoT.</li>
-            <li>IoT prototyping: design process, MVP building and fast-prototyping (3D modeling, 3D printing).</li>
-            <li>Entrepreneurship in China, lean startup method, agile project management and pitching.</li>
-            <li>Intercultural communication, international management and Chinese Mandarin.</li>
-        </ul>
-    </div>
-    <div class="entry-dot"></div>
-</li>
-
-                            
-                    
             </div>
+        </section>
 
-            <div class="section" id="projects">
-                <h2>Projects</h2>
+        <!-- ============ PROJECTS ============ -->
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <div class="wrap">
+                <h2 class="section-title" id="projects-title">Projects</h2>
 
-                <h3>Personal / Professional Projects</h3>
-                <div class="project-grid">
+                <h3 class="group-title">Personal / Professional Projects</h3>
+                <div class="project-list">
 
-                    <div class="project-card">
-                        <div class="project-preview">
-                            <img loading="lazy" data-src="assets/projects/pf22logo.png" alt="Multi-Fidelity Deep Learning Project">
-                            <h4>Multi-Fidelity Deep Learning – Reducing Training Costs</h4>
+                    <article class="project project-featured">
+                        <div class="project-aside">
+                            <figure class="project-figure">
+                                <img src="assets/opt/projects/pf22logo-960.webp"
+                                     srcset="assets/opt/projects/pf22logo-480.webp 480w, assets/opt/projects/pf22logo-960.webp 960w"
+                                     sizes="(min-width: 900px) 380px, calc(100vw - 40px)"
+                                     width="960" height="533" loading="lazy" decoding="async"
+                                     alt="Multi-Fidelity Deep Learning Project">
+                            </figure>
+                            <dl class="project-meta">
+                                <div><dt>Team size</dt><dd>1</dd></div>
+                                <div><dt>Date</dt><dd>March – June 2026</dd></div>
+                                <div><dt>Type</dt><dd>UTBM School Project (PF22 – Deep Learning)</dd></div>
+                            </dl>
+                        </div>
+                        <div class="project-main">
+                            <h4 class="project-title">Multi-Fidelity Deep Learning – Reducing Training Costs</h4>
                             <p class="project-brief">Explored how combining a small share of expensive High-Fidelity images with abundant cheap Low-Fidelity data can drastically cut dataset acquisition costs without sacrificing accuracy.</p>
                             <p class="project-tools">Python, PyTorch, ResNet-18, Optuna, Transfer Learning, EWC, Curriculum Learning</p>
+                            <details class="more project-details">
+                                <summary>View Details</summary>
+                                <div class="project-description">
+                                    <p>This project investigates <strong>multi-fidelity learning</strong> for image classification: how to maximise High-Fidelity (HF) accuracy while minimising the total cost of acquiring training data, by leveraging large volumes of cheap Low-Fidelity (BF) images alongside a small HF set.</p>
+                                    <ul>
+                                        <li>Designed a controlled <strong>degradation pipeline</strong> (sub-sampling 224→64 px, Gaussian noise σ=0.15, JPEG q60) applied deterministically to simulate realistic BF data across three datasets: Animals-10, Imagewoof, and Intel Image.</li>
+                                        <li>Defined a three-metric cost model (data cost, compute cost, total cost) to rigorously compare strategies on equal footing.</li>
+                                        <li>Implemented and compared four multi-fidelity strategies: <strong>Sequential Transfer Learning (BF→HF)</strong>, <strong>Weighted Co-training</strong>, <strong>Progressive Curriculum Learning</strong>, and <strong>Elastic Weight Consolidation (EWC)</strong>.</li>
+                                        <li>Tuned all strategies with <strong>Optuna</strong> and evaluated over 3 datasets × 3 random seeds on a GPU V100S server for statistically robust results.</li>
+                                        <li>EWC achieved the best HF accuracy, <strong>halving the total cost</strong> compared to a naive HF-only baseline, consistently across all three datasets.</li>
+                                    </ul>
+                                </div>
+                            </details>
+                            <ul class="project-links">
+                                <li><a href="https://github.com/VasicIvann/PF22_MultiFidelity_DL" target="_blank" rel="noopener noreferrer">Code</a></li>
+                                <li><a href="assets/pf22_rapport.pdf" target="_blank" rel="noopener noreferrer">Report</a></li>
+                                <li><a href="assets/presentation_finale_PF22.pdf" target="_blank" rel="noopener noreferrer">Slides</a></li>
+                            </ul>
                         </div>
+                    </article>
 
-                        <button class="view-details-btn">View Details</button>
-
-                        <div class="project-details hidden">
-                            <div class="project-info">
-                                <p><strong>Team size:</strong> 1</p>
-                                <p><strong>Date:</strong> March – June 2026</p>
-                                <p><strong>Type:</strong> UTBM School Project (PF22 – Deep Learning)</p>
-                            </div>
-
-                            <div class="project-description">
-                                <p>
-                                    This project investigates <strong>multi-fidelity learning</strong> for image classification: how to maximise High-Fidelity (HF) accuracy while minimising the total cost of acquiring training data, by leveraging large volumes of cheap Low-Fidelity (BF) images alongside a small HF set.
-                                </p>
-                                <ul>
-                                    <li>Designed a controlled <strong>degradation pipeline</strong> (sub-sampling 224→64 px, Gaussian noise σ=0.15, JPEG q60) applied deterministically to simulate realistic BF data across three datasets: Animals-10, Imagewoof, and Intel Image.</li>
-                                    <li>Defined a three-metric cost model (data cost, compute cost, total cost) to rigorously compare strategies on equal footing.</li>
-                                    <li>Implemented and compared four multi-fidelity strategies: <strong>Sequential Transfer Learning (BF→HF)</strong>, <strong>Weighted Co-training</strong>, <strong>Progressive Curriculum Learning</strong>, and <strong>Elastic Weight Consolidation (EWC)</strong>.</li>
-                                    <li>Tuned all strategies with <strong>Optuna</strong> and evaluated over 3 datasets × 3 random seeds on a GPU V100S server for statistically robust results.</li>
-                                    <li>EWC achieved the best HF accuracy, <strong>halving the total cost</strong> compared to a naive HF-only baseline, consistently across all three datasets.</li>
-                                </ul>
-                            </div>
-
-                            <div class="project-links">
-                                <a href="https://github.com/VasicIvann/PF22_MultiFidelity_DL" target="_blank">Code</a>
-                                <a href="assets/pf22_rapport.pdf" target="_blank">Report</a>
-                                <a href="assets/presentation_finale_PF22.pdf" target="_blank">Slides</a>
-                            </div>
+                    <article class="project project-featured">
+                        <div class="project-aside">
+                            <figure class="project-figure">
+                                <img src="assets/opt/projects/physiovapp-960.webp"
+                                     srcset="assets/opt/projects/physiovapp-480.webp 480w, assets/opt/projects/physiovapp-960.webp 960w"
+                                     sizes="(min-width: 900px) 380px, calc(100vw - 40px)"
+                                     width="960" height="524" loading="lazy" decoding="async"
+                                     alt="Physiovapp Dashboard Interface">
+                            </figure>
+                            <dl class="project-meta">
+                                <div><dt>Team size</dt><dd>1</dd></div>
+                                <div><dt>Date</dt><dd>2025 - 2026</dd></div>
+                                <div><dt>Type</dt><dd>Personal Project</dd></div>
+                            </dl>
                         </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-preview">
-                            <img loading="lazy" data-src="assets/projects/physiovapp.png" alt="Physiovapp Dashboard Interface">
-                            <h4>Physiovapp - Daily Health Tracker</h4>
+                        <div class="project-main">
+                            <h4 class="project-title">Physiovapp - Daily Health Tracker</h4>
                             <p class="project-brief">A modern web app to track daily habits, health routines, and personal progress with real-time data and interactive charts.</p>
                             <p class="project-tools">Next.js, React, TypeScript, Firebase, Firestore, Recharts, Tailwind CSS</p>
+                            <details class="more project-details">
+                                <summary>View Details</summary>
+                                <div class="project-description">
+                                    <p>Physiovapp is a full-stack-ready wellness tracker focused on practical daily consistency and clear data visualization, that I use myself to improve productivity and health habits:</p>
+                                    <ul>
+                                        <li>Built a responsive web interface with <strong>Next.js</strong> and <strong>React</strong>, designed for both mobile and desktop usage.</li>
+                                        <li>Implemented real-time daily logging with <strong>Firebase Authentication</strong> and <strong>Firestore</strong> for user-scoped data.</li>
+                                        <li>Developed client-side analytics using <strong>Recharts</strong> (nutrition, sleep, activities, routines) with dynamic scales and multi-series charts.</li>
+                                        <li>Designed routine tracking logic with morning/evening states to improve habit accuracy.</li>
+                                        <li>Optimized architecture for fully free deployment on <strong>Firebase Hosting</strong> without paid backend runtime dependencies.</li>
+                                    </ul>
+                                </div>
+                            </details>
+                            <ul class="project-links">
+                                <li><a href="https://github.com/VasicIvann/Physiovapp" target="_blank" rel="noopener noreferrer">Code</a></li>
+                                <li><a href="https://physiovapp.web.app" target="_blank" rel="noopener noreferrer">Website Link</a></li>
+                            </ul>
                         </div>
+                    </article>
 
-                        <button class="view-details-btn">View Details</button>
-
-                        <div class="project-details hidden">
-                            <div class="project-info">
-                                <p><strong>Team size:</strong> 1</p>
-                                <p><strong>Date:</strong> 2025 - 2026</p>
-                                <p><strong>Type:</strong> Personal Project</p>
-                            </div>
-
-                            <div class="project-description">
-                                <p>
-                                    Physiovapp is a full-stack-ready wellness tracker focused on practical daily consistency and clear data visualization, that I use myself to improve productivity and health habits:
-                                </p>
-                                <ul>
-                                    <li>Built a responsive web interface with <strong>Next.js</strong> and <strong>React</strong>, designed for both mobile and desktop usage.</li>
-                                    <li>Implemented real-time daily logging with <strong>Firebase Authentication</strong> and <strong>Firestore</strong> for user-scoped data.</li>
-                                    <li>Developed client-side analytics using <strong>Recharts</strong> (nutrition, sleep, activities, routines) with dynamic scales and multi-series charts.</li>
-                                    <li>Designed routine tracking logic with morning/evening states to improve habit accuracy.</li>
-                                    <li>Optimized architecture for fully free deployment on <strong>Firebase Hosting</strong> without paid backend runtime dependencies.</li>
-                                </ul>
-                            </div>
-
-                            <div class="project-links">
-                                <a href="https://github.com/VasicIvann/Physiovapp" target="_blank">Code</a>
-                                <a href="https://physiovapp.web.app" target="_blank">Website Link</a>
-                            </div>
+                    <article class="project project-featured">
+                        <div class="project-aside">
+                            <figure class="project-figure">
+                                <img src="assets/opt/projects/hsk_trainer-960.webp"
+                                     srcset="assets/opt/projects/hsk_trainer-480.webp 480w, assets/opt/projects/hsk_trainer-960.webp 960w"
+                                     sizes="(min-width: 900px) 380px, calc(100vw - 40px)"
+                                     width="960" height="350" loading="lazy" decoding="async"
+                                     alt="HSK Trainer Interface">
+                            </figure>
+                            <dl class="project-meta">
+                                <div><dt>Team size</dt><dd>1</dd></div>
+                                <div><dt>Date</dt><dd>2025 - 2026</dd></div>
+                                <div><dt>Type</dt><dd>Personal Project</dd></div>
+                            </dl>
                         </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-preview">
-                            <img loading="lazy" data-src="assets/projects/hsk_trainer.png" alt="HSK Trainer Interface">
-                            <h4>HSK Trainer - Chinese Language Learning Platform</h4>
+                        <div class="project-main">
+                            <h4 class="project-title">HSK Trainer - Chinese Language Learning Platform</h4>
                             <p class="project-brief">Web app for preparing HSK exams, combining FSRS with LLM-powered written-expression grading.</p>
                             <p class="project-tools">FastAPI, Next.js 16, PostgreSQL, Anthropic API, Python, TypeScript, Tailwind CSS</p>
+                            <details class="more project-details">
+                                <summary>View Details</summary>
+                                <div class="project-description">
+                                    <p>HSK Trainer is a production-grade language-learning platform covering HSK levels 1–3 (~600 words), built as both a daily study tool and an engineering portfolio piece:</p>
+                                    <ul>
+                                        <li>Implemented an <strong>FSRS spaced-repetition scheduler</strong> that models per-card stability and difficulty, scheduling each review just before predicted forgetting — outperforming classic SM-2 (Anki).</li>
+                                        <li>Integrated <strong>Anthropic API</strong> (streaming SSE) to grade free-form written Chinese, returning a structured correction: score, corrected version, pinyin, translation, typed mistakes, and a next-step recommendation.</li>
+                                        <li>Designed a <strong>feedback loop</strong> that automatically re-queues vocabulary flagged as misused by llm back into the FSRS review deck.</li>
+                                        <li>Built an <strong>optimistic quiz UI</strong> (Next.js + TanStack Query) that prefetches the session and advances client-side on rating, reducing perceived latency from 2–5 s to under 50 ms.</li>
+                                        <li>Deployed the full stack at <strong>near-zero cost</strong>: Vercel (frontend), Render free tier (FastAPI backend), Neon Postgres — with a keep-warm cron and infrastructure-as-code via <code>render.yaml</code>.</li>
+                                    </ul>
+                                </div>
+                            </details>
+                            <ul class="project-links">
+                                <li><a href="https://github.com/VasicIvann/Chinese_HSK_app" target="_blank" rel="noopener noreferrer">Code</a></li>
+                                <li><a href="assets/Chinese_HSK_app_Report.pdf" target="_blank" rel="noopener noreferrer">Report</a></li>
+                                <li><a href="https://chinese-hsk-app.vercel.app/" target="_blank" rel="noopener noreferrer">Website Link</a></li>
+                            </ul>
                         </div>
-
-                        <button class="view-details-btn">View Details</button>
-
-                        <div class="project-details hidden">
-                            <div class="project-info">
-                                <p><strong>Team size:</strong> 1</p>
-                                <p><strong>Date:</strong> 2025 - 2026</p>
-                                <p><strong>Type:</strong> Personal Project</p>
-                            </div>
-
-                            <div class="project-description">
-                                <p>
-                                    HSK Trainer is a production-grade language-learning platform covering HSK levels 1–3 (~600 words), built as both a daily study tool and an engineering portfolio piece:
-                                </p>
-                                <ul>
-                                    <li>Implemented an <strong>FSRS spaced-repetition scheduler</strong> that models per-card stability and difficulty, scheduling each review just before predicted forgetting — outperforming classic SM-2 (Anki).</li>
-                                    <li>Integrated <strong>Anthropic API</strong> (streaming SSE) to grade free-form written Chinese, returning a structured correction: score, corrected version, pinyin, translation, typed mistakes, and a next-step recommendation.</li>
-                                    <li>Designed a <strong>feedback loop</strong> that automatically re-queues vocabulary flagged as misused by llm back into the FSRS review deck.</li>
-                                    <li>Built an <strong>optimistic quiz UI</strong> (Next.js + TanStack Query) that prefetches the session and advances client-side on rating, reducing perceived latency from 2–5 s to under 50 ms.</li>
-                                    <li>Deployed the full stack at <strong>near-zero cost</strong>: Vercel (frontend), Render free tier (FastAPI backend), Neon Postgres — with a keep-warm cron and infrastructure-as-code via <code>render.yaml</code>.</li>
-                                </ul>
-                            </div>
-
-                            <div class="project-links">
-                                <a href="https://github.com/VasicIvann/Chinese_HSK_app" target="_blank">Code</a>
-                                <a href="assets/Chinese_HSK_app_Report.pdf" target="_blank">Report</a>
-                                <a href="https://chinese-hsk-app.vercel.app/" target="_blank">Website Link</a>
-                            </div>
-                        </div>
-                    </div>
+                    </article>
 
                 </div>
 
-                <h3>School Projects</h3>
-                <div class="project-grid">
+                <h3 class="group-title">School Projects</h3>
+                <div class="project-list">
 
-                    <div class="project-card">
-                        <div class="project-preview">
-                            <img loading="lazy" data-src="assets/projects/bank_classification.png" alt="Bank Term Deposit Prediction">
-                            <h4>Bank Term Deposit Prediction - ML Binary Classification</h4>
+                    <article class="project">
+                        <div class="project-aside">
+                            <dl class="project-meta">
+                                <div><dt>School</dt><dd>UTBM</dd></div>
+                                <div><dt>Team size</dt><dd>3</dd></div>
+                                <div><dt>Date</dt><dd>2026</dd></div>
+                                <div><dt>Course</dt><dd>Data Science &amp; Machine Learning</dd></div>
+                            </dl>
+                        </div>
+                        <div class="project-main">
+                            <h4 class="project-title">Bank Term Deposit Prediction - ML Binary Classification</h4>
                             <p class="project-brief">Machine learning study on a Kaggle Playground dataset, benchmarking six classifiers and tackling severe class imbalance and data leakage.</p>
                             <p class="project-tools">Python, Pandas, Scikit-learn, XGBoost, LaTeX</p>
+                            <details class="more project-details">
+                                <summary>View Details</summary>
+                                <div class="project-description">
+                                    <p>A full supervised binary classification pipeline predicting whether a client subscribes to a term deposit after a marketing campaign:</p>
+                                    <ul>
+                                        <li>Performed in-depth <strong>EDA</strong> on 750k rows / 16 features, identifying severe class imbalance (~7.3:1) and disguised missing values (<strong>"unknown"</strong> categories, <code>pdays = -1</code>).</li>
+                                        <li>Diagnosed and removed a documented <strong>temporal data leakage</strong> on the <code>duration</code> feature (point-biserial r = +0.52), favouring production realism over leaderboard score.</li>
+                                        <li>Built a leakage-safe <strong>Scikit-learn Pipeline</strong> (<code>ColumnTransformer</code> + <code>StandardScaler</code> + <code>OneHotEncoder</code>) fitted only on training folds.</li>
+                                        <li>Benchmarked six models (Logistic Regression, LDA, QDA, Gaussian NB, Random Forest, <strong>XGBoost</strong>) on four complementary metrics (ROC-AUC, PR-AUC, F1, Brier), validated by stratified 5-fold cross-validation.</li>
+                                    </ul>
+                                    <figure class="project-figure">
+                                        <img src="assets/opt/projects/bank_classification-960.webp"
+                                             srcset="assets/opt/projects/bank_classification-480.webp 480w, assets/opt/projects/bank_classification-960.webp 960w"
+                                             sizes="(min-width: 900px) 480px, calc(100vw - 40px)"
+                                             width="960" height="536" loading="lazy" decoding="async"
+                                             alt="Bank Term Deposit Prediction">
+                                    </figure>
+                                </div>
+                            </details>
+                            <ul class="project-links">
+                                <li><a href="https://github.com/VasicIvann/VasicIvann.github.io/blob/main/assets/Bank_Final_DS52.ipynb" target="_blank" rel="noopener noreferrer">Code</a></li>
+                                <li><a href="assets/final_presentation.pdf" target="_blank" rel="noopener noreferrer">Presentation</a></li>
+                            </ul>
                         </div>
-                        <button class="view-details-btn">View Details</button>
-                        <div class="project-details hidden">
-                            <div class="project-info">
-                                <p><strong>School:</strong> UTBM</p>
-                                <p><strong>Team size:</strong> 3</p>
-                                <p><strong>Date:</strong> 2026</p>
-                                <p><strong>Course:</strong> Data Science &amp; Machine Learning</p>
-                            </div>
-                            <p class="project-description">
-                                A full supervised binary classification pipeline predicting whether a client subscribes to a term deposit after a marketing campaign:
-                                <ul>
-                                    <li>Performed in-depth <strong>EDA</strong> on 750k rows / 16 features, identifying severe class imbalance (~7.3:1) and disguised missing values (<strong>"unknown"</strong> categories, <code>pdays = -1</code>).</li>
-                                    <li>Diagnosed and removed a documented <strong>temporal data leakage</strong> on the <code>duration</code> feature (point-biserial r = +0.52), favouring production realism over leaderboard score.</li>
-                                    <li>Built a leakage-safe <strong>Scikit-learn Pipeline</strong> (<code>ColumnTransformer</code> + <code>StandardScaler</code> + <code>OneHotEncoder</code>) fitted only on training folds.</li>
-                                    <li>Benchmarked six models (Logistic Regression, LDA, QDA, Gaussian NB, Random Forest, <strong>XGBoost</strong>) on four complementary metrics (ROC-AUC, PR-AUC, F1, Brier), validated by stratified 5-fold cross-validation.</li>
-                                </ul>
-                            </p>
-                            <div class="project-links">
-                                <a href="https://github.com/VasicIvann/VasicIvann.github.io/blob/main/assets/Bank_Final_DS52.ipynb" target="_blank">Code</a>
-                                <a href="assets/final_presentation.pdf" target="_blank">Presentation</a>
-                            </div>
-                        </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
-                        <div class="project-preview">
-                            <img loading="lazy" data-src="assets/projects/imdb.jpg" alt="IMDB Sentiment Classification">
-                            <h4>IMDB Sentiment Classification</h4>
+                    <article class="project">
+                        <div class="project-aside">
+                            <dl class="project-meta">
+                                <div><dt>School</dt><dd>UTBM</dd></div>
+                                <div><dt>Team size</dt><dd>3</dd></div>
+                                <div><dt>Date</dt><dd>2026</dd></div>
+                                <div><dt>Course</dt><dd>DS52 Machine Learning</dd></div>
+                            </dl>
+                        </div>
+                        <div class="project-main">
+                            <h4 class="project-title">IMDB Sentiment Classification</h4>
                             <p class="project-brief">Binary text classification using NLP pipelines and various models (MLP, LSTM, TextCNN, LR, SVM) to predict movie review sentiment.</p>
                             <p class="project-tools">Python, PyTorch, Scikit-learn, NLP</p>
+                            <details class="more project-details">
+                                <summary>View Details</summary>
+                                <div class="project-description">
+                                    <p>A comparative study of traditional ML and deep learning models for text sentiment analysis on the 50K IMDB dataset:</p>
+                                    <ul>
+                                        <li>Implemented data cleaning (regex, HTML/URL removal) and vectorization pipelines using <strong>TF-IDF</strong> (with custom stoplist to preserve negations) and integer sequence padding.</li>
+                                        <li>Benchmarked traditional models (Logistic Regression, SVM) against neural architectures (<strong>3-layer MLP</strong>, Unidirectional <strong>LSTM</strong>, and Kim-style <strong>TextCNN</strong>).</li>
+                                        <li>Demonstrated that a simple TF-IDF representation combined with an MLP (90.5% accuracy) or LR/SVM out-performed a from-scratch LSTM (84.9%) which suffered from limited embedding representation.</li>
+                                        <li>Analyzed feature interpretability by identifying the most discriminative bigrams and evaluated training speed versus accuracy.</li>
+                                    </ul>
+                                    <figure class="project-figure">
+                                        <img src="assets/opt/projects/imdb-960.webp"
+                                             srcset="assets/opt/projects/imdb-480.webp 480w, assets/opt/projects/imdb-960.webp 960w"
+                                             sizes="(min-width: 900px) 480px, calc(100vw - 40px)"
+                                             width="960" height="540" loading="lazy" decoding="async"
+                                             alt="IMDB Sentiment Classification">
+                                    </figure>
+                                </div>
+                            </details>
+                            <ul class="project-links">
+                                <li><a href="https://github.com/VasicIvann/VasicIvann.github.io/blob/main/assets/imdb.ipynb" target="_blank" rel="noopener noreferrer">Code</a></li>
+                                <li><a href="assets/Report_TP2_DS52.pdf" target="_blank" rel="noopener noreferrer">PDF Report</a></li>
+                            </ul>
                         </div>
-                        <button class="view-details-btn">View Details</button>
-                        <div class="project-details hidden">
-                            <div class="project-info">
-                                <p><strong>School:</strong> UTBM</p>
-                                <p><strong>Team size:</strong> 3</p>
-                                <p><strong>Date:</strong> 2026</p>
-                                <p><strong>Course:</strong> DS52 Machine Learning</p>
-                            </div>
-                            <p class="project-description">
-                                A comparative study of traditional ML and deep learning models for text sentiment analysis on the 50K IMDB dataset:
-                                <ul>
-                                    <li>Implemented data cleaning (regex, HTML/URL removal) and vectorization pipelines using <strong>TF-IDF</strong> (with custom stoplist to preserve negations) and integer sequence padding.</li>
-                                    <li>Benchmarked traditional models (Logistic Regression, SVM) against neural architectures (<strong>3-layer MLP</strong>, Unidirectional <strong>LSTM</strong>, and Kim-style <strong>TextCNN</strong>).</li>
-                                    <li>Demonstrated that a simple TF-IDF representation combined with an MLP (90.5% accuracy) or LR/SVM out-performed a from-scratch LSTM (84.9%) which suffered from limited embedding representation.</li>
-                                    <li>Analyzed feature interpretability by identifying the most discriminative bigrams and evaluated training speed versus accuracy.</li>
-                                </ul>
-                            </p>
-                            <div class="project-links">
-                                <a href="https://github.com/VasicIvann/VasicIvann.github.io/blob/main/assets/imdb.ipynb" target="_blank">Code</a>
-                                <a href="assets/Report_TP2_DS52.pdf" target="_blank">PDF Report</a>
-                            </div>
-                        </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
-                        <div class="project-preview">
-                            <img loading="lazy" data-src="assets/projects/teeko.png" alt="Teeko Game Interface">
-                            <h4>Teeko - AI Strategy Game</h4>
+                    <article class="project">
+                        <div class="project-aside">
+                            <dl class="project-meta">
+                                <div><dt>School</dt><dd>UTBM</dd></div>
+                                <div><dt>Team size</dt><dd>3</dd></div>
+                                <div><dt>Date</dt><dd>2025</dd></div>
+                                <div><dt>Course</dt><dd>Artificial Intelligence</dd></div>
+                            </dl>
+                        </div>
+                        <div class="project-main">
+                            <h4 class="project-title">Teeko - AI Strategy Game</h4>
                             <p class="project-brief">A Python implementation of the Teeko board game featuring a responsive GUI and a scalable AI opponent using advanced search algorithms.</p>
                             <p class="project-tools">Python, Tkinter, Minimax, Alpha-Beta Pruning</p>
+                            <details class="more project-details">
+                                <summary>View Details</summary>
+                                <div class="project-description">
+                                    <p>This project involved developing a full version of the Teeko strategy board game with a strong focus on Artificial Intelligence:</p>
+                                    <ul>
+                                        <li>Developed a graphical user interface (GUI) using <strong>Python</strong> and <strong>Tkinter</strong> to manage game phases (Placement and Movement).</li>
+                                        <li>Implemented a scalable AI with three difficulty levels, culminating in a "Hard" mode powered by the <strong>Minimax algorithm</strong> with <strong>Alpha-Beta pruning</strong>.</li>
+                                        <li>Optimized decision-making (Depth 4) using heuristic evaluation functions to assess board control, alignment threats, and win conditions.</li>
+                                        <li>Solved complex state management challenges to handle move validation and real-time game updates efficiently.</li>
+                                    </ul>
+                                    <figure class="project-figure">
+                                        <img src="assets/opt/projects/teeko-960.webp"
+                                             srcset="assets/opt/projects/teeko-480.webp 480w, assets/opt/projects/teeko-960.webp 960w"
+                                             sizes="(min-width: 900px) 480px, calc(100vw - 40px)"
+                                             width="960" height="536" loading="lazy" decoding="async"
+                                             alt="Teeko Game Interface">
+                                    </figure>
+                                </div>
+                            </details>
+                            <ul class="project-links">
+                                <li><a href="assets/Teeko_Project_Report.pdf" target="_blank" rel="noopener noreferrer">Report (french)</a></li>
+                                <li><a href="https://github.com/VasicIvann/Teeko" target="_blank" rel="noopener noreferrer">Code</a></li>
+                            </ul>
                         </div>
-                        <button class="view-details-btn">View Details</button>
-                        <div class="project-details hidden">
-                            <div class="project-info">
-                                <p><strong>School:</strong> UTBM</p>
-                                <p><strong>Team size:</strong> 3</p>
-                                <p><strong>Date:</strong> 2025</p>
-                                <p><strong>Course:</strong> Artificial Intelligence</p>
-                            </div>
-                            <p class="project-description">
-                                This project involved developing a full version of the Teeko strategy board game with a strong focus on Artificial Intelligence:
-                                <ul>
-                                    <li>Developed a graphical user interface (GUI) using <strong>Python</strong> and <strong>Tkinter</strong> to manage game phases (Placement and Movement).</li>
-                                    <li>Implemented a scalable AI with three difficulty levels, culminating in a "Hard" mode powered by the <strong>Minimax algorithm</strong> with <strong>Alpha-Beta pruning</strong>.</li>
-                                    <li>Optimized decision-making (Depth 4) using heuristic evaluation functions to assess board control, alignment threats, and win conditions.</li>
-                                    <li>Solved complex state management challenges to handle move validation and real-time game updates efficiently.</li>
-                                </ul>
-                            </p>
-                            <div class="project-links">
-                                <a href="assets/Teeko_Project_Report.pdf" target="_blank">Report (french)</a>
-                                <a href="https://github.com/VasicIvann/Teeko" target="_blank">Code</a>
-                            </div>
-                        </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
-                        <div class="project-preview">
-                            <img loading="lazy" data-src="assets/projects/CalorieCrew.png" alt="Calorie Crew Interface">
-                            <h4>Calorie Crew - Social Nutrition Tracker</h4>
+                    <article class="project">
+                        <div class="project-aside">
+                            <dl class="project-meta">
+                                <div><dt>School</dt><dd>UTBM</dd></div>
+                                <div><dt>Team size</dt><dd>4</dd></div>
+                                <div><dt>Date</dt><dd>2024</dd></div>
+                                <div><dt>Course</dt><dd>Mobile Development</dd></div>
+                            </dl>
+                        </div>
+                        <div class="project-main">
+                            <h4 class="project-title">Calorie Crew - Social Nutrition Tracker</h4>
                             <p class="project-brief">A native Android application designed to assist users in managing their health through personalized calorie tracking and community-driven challenges.</p>
                             <p class="project-tools">Kotlin, Jetpack Compose, Firebase, MVVM</p>
+                            <details class="more project-details">
+                                <summary>View Details</summary>
+                                <div class="project-description">
+                                    <p>Calorie Crew is a mobile application developed to combine fitness tracking with social motivation[cite: 18]:</p>
+                                    <ul>
+                                        <li>Built entirely with <strong>Kotlin</strong> and <strong>Jetpack Compose</strong>, following Material 3 design principles for a modern and reactive UI.</li>
+                                        <li>Structured using the <strong>MVVM architecture</strong> (Model-View-ViewModel) to ensure scalability and clean separation of concerns.</li>
+                                        <li>Leveraged <strong>Firebase</strong> for secure authentication and <strong>Cloud Firestore</strong> for real-time data synchronization of meals, profiles, and messages.</li>
+                                        <li>Implemented advanced features such as dynamic calorie calculation, community creation, real-time chat, and gamified challenges.</li>
+                                    </ul>
+                                    <figure class="project-figure project-figure-small">
+                                        <img src="assets/opt/projects/caloriecrew-582.webp"
+                                             srcset="assets/opt/projects/caloriecrew-480.webp 480w, assets/opt/projects/caloriecrew-582.webp 582w"
+                                             sizes="(min-width: 900px) 300px, calc(100vw - 40px)"
+                                             width="582" height="392" loading="lazy" decoding="async"
+                                             alt="Calorie Crew Interface">
+                                    </figure>
+                                </div>
+                            </details>
+                            <ul class="project-links">
+                                <li><a href="assets/CalorieCrew_Report.pdf" target="_blank" rel="noopener noreferrer">Report</a></li>
+                                <li><a href="https://www.figma.com/design/VaFbwSbpLtKaxIYR2gPrni/Maquette-SY43" target="_blank" rel="noopener noreferrer">Figma</a></li>
+                            </ul>
                         </div>
-                        <button class="view-details-btn">View Details</button>
-                        <div class="project-details hidden">
-                            <div class="project-info">
-                                <p><strong>School:</strong> UTBM</p>
-                                <p><strong>Team size:</strong> 4</p>
-                                <p><strong>Date:</strong> 2024</p>
-                                <p><strong>Course:</strong> Mobile Development</p>
-                            </div>
-                            <p class="project-description">
-                                Calorie Crew is a mobile application developed to combine fitness tracking with social motivation[cite: 18]:
-                                <ul>
-                                    <li>Built entirely with <strong>Kotlin</strong> and <strong>Jetpack Compose</strong>, following Material 3 design principles for a modern and reactive UI.</li>
-                                    <li>Structured using the <strong>MVVM architecture</strong> (Model-View-ViewModel) to ensure scalability and clean separation of concerns.</li>
-                                    <li>Leveraged <strong>Firebase</strong> for secure authentication and <strong>Cloud Firestore</strong> for real-time data synchronization of meals, profiles, and messages.</li>
-                                    <li>Implemented advanced features such as dynamic calorie calculation, community creation, real-time chat, and gamified challenges.</li>
-                                </ul>
-                            </p>
-                            <div class="project-links">
-                                <a href="assets/CalorieCrew_Report.pdf" target="_blank">Report</a>
-                                <a href="https://www.figma.com/design/VaFbwSbpLtKaxIYR2gPrni/Maquette-SY43" target="_blank">Figma</a>
-                            </div>
-                        </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
-                        <div class="project-preview">
-                            <img loading="lazy" data-src="assets/projects/moodneuille.png" alt="Educational Platform">
-                            <h4>Moodneuille - a simplified educational platform</h4>
+                    <article class="project">
+                        <div class="project-aside">
+                            <dl class="project-meta">
+                                <div><dt>School</dt><dd>UTBM</dd></div>
+                                <div><dt>Team size</dt><dd>2</dd></div>
+                                <div><dt>Date</dt><dd>2024</dd></div>
+                                <div><dt>Course</dt><dd>Web Development (WE4A)</dd></div>
+                            </dl>
+                        </div>
+                        <div class="project-main">
+                            <h4 class="project-title">Moodneuille - a simplified educational platform</h4>
                             <p class="project-brief">A comprehensive web application inspired by Moodle, featuring user role management, course administration, and dynamic content interaction.</p>
                             <p class="project-tools">Symfony 7, MySQL, Bootstrap, AJAX</p>
+                            <details class="more project-details">
+                                <summary>View Details</summary>
+                                <div class="project-description">
+                                    <p>In this project, we built a full-stack educational platform using the Symfony 7 framework:</p>
+                                    <ul>
+                                        <li>Designed the database using the Merise methodology (MCD/MLD) and implemented it via Doctrine ORM.</li>
+                                        <li>Structured the application using the MVC architecture to manage complex user roles (Administrator, Professor, Student).</li>
+                                        <li>Implemented secure authentication and access control to manage permissions for courses and content.</li>
+                                        <li>Integrated JavaScript and AJAX to enable dynamic interactions, such as deleting posts without page reloads.</li>
+                                    </ul>
+                                    <figure class="project-figure">
+                                        <img src="assets/opt/projects/moodneuille-960.webp"
+                                             srcset="assets/opt/projects/moodneuille-480.webp 480w, assets/opt/projects/moodneuille-960.webp 960w"
+                                             sizes="(min-width: 900px) 480px, calc(100vw - 40px)"
+                                             width="960" height="536" loading="lazy" decoding="async"
+                                             alt="Educational Platform">
+                                    </figure>
+                                </div>
+                            </details>
+                            <ul class="project-links">
+                                <li><a href="assets/WE4A_Project_Report.pdf" target="_blank" rel="noopener noreferrer">Report (french)</a></li>
+                                <li><a href="https://github.com/VasicIvann/Moodneuille" target="_blank" rel="noopener noreferrer">Code</a></li>
+                            </ul>
                         </div>
-                        <button class="view-details-btn">View Details</button>
-                        <div class="project-details hidden">
-                            <div class="project-info">
-                                <p><strong>School:</strong> UTBM</p>
-                                <p><strong>Team size:</strong> 2</p>
-                                <p><strong>Date:</strong> 2024</p>
-                                <p><strong>Course:</strong> Web Development (WE4A)</p>
-                            </div>
-                            <p class="project-description">
-                                In this project, we built a full-stack educational platform using the Symfony 7 framework:
-                                <ul>
-                                    <li>Designed the database using the Merise methodology (MCD/MLD) and implemented it via Doctrine ORM.</li>
-                                    <li>Structured the application using the MVC architecture to manage complex user roles (Administrator, Professor, Student).</li>
-                                    <li>Implemented secure authentication and access control to manage permissions for courses and content.</li>
-                                    <li>Integrated JavaScript and AJAX to enable dynamic interactions, such as deleting posts without page reloads.</li>
-                                </ul>
-                            </p>
-                            <div class="project-links">
-                                <a href="assets/WE4A_Project_Report.pdf" target="_blank">Report (french)</a>
-                                <a href="https://github.com/VasicIvann/Moodneuille" target="_blank">Code</a>
-                            </div>
-                        </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
-                        <div class="project-preview">
-                            <img loading="lazy" data-src="assets/projects/Turing_machine.png" alt="UTBMachine Game">
-                            <h4>UTBMachine - Logic Game Adaptation</h4>
+                    <article class="project">
+                        <div class="project-aside">
+                            <dl class="project-meta">
+                                <div><dt>School</dt><dd>UTBM</dd></div>
+                                <div><dt>Team size</dt><dd>2</dd></div>
+                                <div><dt>Date</dt><dd>2024</dd></div>
+                                <div><dt>Course</dt><dd>Object-Oriented Design (AP4B)</dd></div>
+                            </dl>
+                        </div>
+                        <div class="project-main">
+                            <h4 class="project-title">UTBMachine - Logic Game Adaptation</h4>
                             <p class="project-brief">A digital adaptation of the "Turing Machine" board game featuring a custom UI and a robust object-oriented architecture.</p>
                             <p class="project-tools">Java, Swing, MVC, UML</p>
+                            <details class="more project-details">
+                                <summary>View Details</summary>
+                                <div class="project-description">
+                                    <p>UTBMachine is a desktop application developed to re-imagine the board game "Turing Machine" with a custom university theme:</p>
+                                    <ul>
+                                        <li>Developed a complete graphical interface using <strong>Java</strong> and the <strong>Swing</strong> library to simulate the game board and note sheets.</li>
+                                        <li>Implemented the <strong>MVC pattern</strong> (Model-View-Controller) to strictly separate the game logic from the UI, ensuring modularity.</li>
+                                        <li>Designed the system using advanced <strong>UML modeling</strong> (Use Case, Class, Sequence, and State-Transition diagrams).</li>
+                                        <li>Created 6 distinct logic scenarios with varying difficulty levels, allowing for solo, competitive, or cooperative gameplay.</li>
+                                    </ul>
+                                    <figure class="project-figure project-figure-small">
+                                        <img src="assets/opt/projects/turing_machine-960.webp"
+                                             srcset="assets/opt/projects/turing_machine-480.webp 480w, assets/opt/projects/turing_machine-960.webp 960w"
+                                             sizes="(min-width: 900px) 300px, calc(100vw - 40px)"
+                                             width="960" height="640" loading="lazy" decoding="async"
+                                             alt="UTBMachine Game">
+                                    </figure>
+                                </div>
+                            </details>
+                            <ul class="project-links">
+                                <li><a href="assets/Turing_Machine_AP4B.pdf" target="_blank" rel="noopener noreferrer">Report (french)</a></li>
+                                <li><a href="https://github.com/Henri-04/AP4B_Turing_Machine_UTBM" target="_blank" rel="noopener noreferrer">Code</a></li>
+                            </ul>
                         </div>
-                        <button class="view-details-btn">View Details</button>
-                        <div class="project-details hidden">
-                            <div class="project-info">
-                                <p><strong>School:</strong> UTBM</p>
-                                <p><strong>Team size:</strong> 2</p>
-                                <p><strong>Date:</strong> 2024</p>
-                                <p><strong>Course:</strong> Object-Oriented Design (AP4B)</p>
-                            </div>
-                            <p class="project-description">
-                                UTBMachine is a desktop application developed to re-imagine the board game "Turing Machine" with a custom university theme:
-                                <ul>
-                                    <li>Developed a complete graphical interface using <strong>Java</strong> and the <strong>Swing</strong> library to simulate the game board and note sheets.</li>
-                                    <li>Implemented the <strong>MVC pattern</strong> (Model-View-Controller) to strictly separate the game logic from the UI, ensuring modularity.</li>
-                                    <li>Designed the system using advanced <strong>UML modeling</strong> (Use Case, Class, Sequence, and State-Transition diagrams).</li>
-                                    <li>Created 6 distinct logic scenarios with varying difficulty levels, allowing for solo, competitive, or cooperative gameplay.</li>
-                                </ul>
-                            </p>
-                            <div class="project-links">
-                                <a href="assets/Turing_Machine_AP4B.pdf" target="_blank">Report (french)</a>
-                                <a href="https://github.com/Henri-04/AP4B_Turing_Machine_UTBM" target="_blank">Code</a>
-                            </div>
-                        </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
-                        <div class="project-preview">
-                            <img loading="lazy" data-src="assets/projects/majority_algorithm.png" alt="The majority algorithm">
-                            <h4>The majority element algorithm</h4>
-                            <p class="project-brief">Study about the majority element problem and implementation of a naive quadratic method and a more efficient divide-and-conquer version. </p>
+                    <article class="project">
+                        <div class="project-aside">
+                            <dl class="project-meta">
+                                <div><dt>School</dt><dd>UTBM</dd></div>
+                                <div><dt>Team size</dt><dd>3</dd></div>
+                                <div><dt>Date</dt><dd>2024</dd></div>
+                                <div><dt>Course</dt><dd>Classical and Quantum Algorithm</dd></div>
+                            </dl>
+                        </div>
+                        <div class="project-main">
+                            <h4 class="project-title">The majority element algorithm</h4>
+                            <p class="project-brief">Study about the majority element problem and implementation of a naive quadratic method and a more efficient divide-and-conquer version.</p>
                             <p class="project-tools">Jupiter, Pyhon</p>
+                            <details class="more project-details">
+                                <summary>View Details</summary>
+                                <div class="project-description">
+                                    <p>In this project :</p>
+                                    <ul>
+                                        <li>We studied the majority element problem and implemented two algorithms to solve it: a naive quadratic method and a more efficient divide-and-conquer version.</li>
+                                        <li>We proved the correctness of the divide-and-conquer algorithm (termination and partial correctness) and compared the time complexities of both approaches.</li>
+                                        <li>Finally, we performed experiments showing that the divide-and-conquer algorithm significantly outperforms the naive one on medium and large datasets.</li>
+                                    </ul>
+                                    <figure class="project-figure">
+                                        <img src="assets/opt/projects/majority_algorithm-960.webp"
+                                             srcset="assets/opt/projects/majority_algorithm-480.webp 480w, assets/opt/projects/majority_algorithm-960.webp 960w"
+                                             sizes="(min-width: 900px) 480px, calc(100vw - 40px)"
+                                             width="960" height="640" loading="lazy" decoding="async"
+                                             alt="The majority algorithm">
+                                    </figure>
+                                </div>
+                            </details>
+                            <ul class="project-links">
+                                <li><a href="assets/majority-algorithm.pdf" target="_blank" rel="noopener noreferrer">Report</a></li>
+                                <li><a href="https://youtu.be/fD2mLWP3F80" target="_blank" rel="noopener noreferrer">Video</a></li>
+                            </ul>
                         </div>
-                        <button class="view-details-btn">View Details</button>
-                        <div class="project-details hidden">
-                            <div class="project-info">
-                                <p><strong>School</strong> UTBM</p>
-                                <p><strong>Team size:</strong> 3</p>
-                                <p><strong>Date:</strong> 2024</p>
-                                <p><strong>Course:</strong> Classical and Quantum Algorithm</p>
-                            </div>
-                            <p class="project-description">
-                                In this project :
-                                <ul>
-                                    <li>We studied the majority element problem and implemented two algorithms to solve it: a naive quadratic method and a more efficient divide-and-conquer version.</li>
-                                    <li>We proved the correctness of the divide-and-conquer algorithm (termination and partial correctness) and compared the time complexities of both approaches.</li>
-                                    <li>Finally, we performed experiments showing that the divide-and-conquer algorithm significantly outperforms the naive one on medium and large datasets.</li>
-                                </ul>
-                            </p>
-                            <div class="project-links">
-                                <a href="assets/majority-algorithm.pdf" target="_blank">Report</a>
-                                <a href="https://youtu.be/fD2mLWP3F80" target="_blank">Video</a>
-                            </div>
-                        </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
-                        <div class="project-preview">
-                            <img loading="lazy" data-src="assets/projects/quantum_entanglement.png" alt="QuantEnt">
-                            <h4>The No Communication Theorem</h4>
+                    <article class="project">
+                        <div class="project-aside">
+                            <dl class="project-meta">
+                                <div><dt>School</dt><dd>UTBM</dd></div>
+                                <div><dt>Team size</dt><dd>3</dd></div>
+                                <div><dt>Date</dt><dd>2025</dd></div>
+                                <div><dt>Course</dt><dd>Classical and Quantum Algorithm</dd></div>
+                            </dl>
+                        </div>
+                        <div class="project-main">
+                            <h4 class="project-title">The No Communication Theorem</h4>
                             <p class="project-brief">Study about Quantum Entanglement. Can we communicate faster that the speed of light using quantum computing ?</p>
                             <p class="project-tools">Jupiter, Python, MPQP</p>
-                        </div>
-                        <button class="view-details-btn">View Details</button>
-                        <div class="project-details hidden">
-                            <div class="project-info">
-                                <p><strong>School:</strong> UTBM</p>
-                                <p><strong>Team size:</strong> 3</p>
-                                <p><strong>Date:</strong> 2025</p>
-                                <p><strong>Course:</strong> Classical and Quantum Algorithm</p>
-                            </div>
-                            <p class="project-description">
-                                In this project, we demonstrate both mathematically and experimentally, that quantum entanglement cannot be used to transmit information:
-                            <ul>
-                                <li>Prepared a maximally entangled Bell state using the MPQP quantum circuit simulator.</li>
-                                <li>Measured Alice’s qubit in different bases (Z and X) to test for signaling effects.</li>
-                                <li>Measured Bob’s qubit independently and analyzed the statistical outcomes.</li>
-                                <li>Proved mathematically using reduced density matrices that Bob’s local state is unaffected by Alice’s choices.</li>
-                                <li>Confirmed through simulation that Bob’s measurement results remain 50/50, regardless of Alice’s measurement basis.</li>
+                            <details class="more project-details">
+                                <summary>View Details</summary>
+                                <div class="project-description">
+                                    <p>In this project, we demonstrate both mathematically and experimentally, that quantum entanglement cannot be used to transmit information:</p>
+                                    <ul>
+                                        <li>Prepared a maximally entangled Bell state using the MPQP quantum circuit simulator.</li>
+                                        <li>Measured Alice’s qubit in different bases (Z and X) to test for signaling effects.</li>
+                                        <li>Measured Bob’s qubit independently and analyzed the statistical outcomes.</li>
+                                        <li>Proved mathematically using reduced density matrices that Bob’s local state is unaffected by Alice’s choices.</li>
+                                        <li>Confirmed through simulation that Bob’s measurement results remain 50/50, regardless of Alice’s measurement basis.</li>
+                                    </ul>
+                                    <figure class="project-figure">
+                                        <img src="assets/opt/projects/quantum_entanglement-960.webp"
+                                             srcset="assets/opt/projects/quantum_entanglement-480.webp 480w, assets/opt/projects/quantum_entanglement-960.webp 960w"
+                                             sizes="(min-width: 900px) 480px, calc(100vw - 40px)"
+                                             width="960" height="522" loading="lazy" decoding="async"
+                                             alt="QuantEnt">
+                                    </figure>
+                                </div>
+                            </details>
+                            <ul class="project-links">
+                                <li><a href="https://www.youtube.com/watch?v=EUIyrzi93aM" target="_blank" rel="noopener noreferrer">Video</a></li>
                             </ul>
-                            </p>
-                            <div class="project-links">
-                                <a href="https://www.youtube.com/watch?v=EUIyrzi93aM" target="_blank">Video</a>
-                            </div>
                         </div>
-                    </div>
-
-
-                </div>
-
-
-            </div>
-
-            <div class="section" id="certifications">
-                <h2>Certifications</h2>
-                
-                <div class="certification-grid">
-                    
-                    <div class="certification-card">
-                        <div class="certification-preview">
-                            <img loading="lazy" src="assets/certif/nvidia.jpg" alt="NVIDIA Deep Learning">
-                            <h4>Getting started with Deep Learning</h4>
-                            <p class="certification-issuer">NVIDIA</p>
-                            <p class="certification-brief">Fundamental concepts of Deep Learning, covering neural network architectures and implementation strategies.</p>
-                        </div>
-                        <a href="assets/certif/DL.pdf" target="_blank" class="view-cert-btn">View Certification</a>
-                    </div>
-
-                    <div class="certification-card">
-                        <div class="certification-preview">
-                            <img loading="lazy" src="assets/certif/nvidia.jpg" alt="NVIDIA LLM">
-                            <h4>Building LLM Applications With Prompt Engineering</h4>
-                            <p class="certification-issuer">NVIDIA</p>
-                            <p class="certification-brief">Advanced techniques for leveraging Large Language Models through effective prompt engineering.</p>
-                        </div>
-                        <a href="assets/certif/LLM.pdf" target="_blank" class="view-cert-btn">View Certification</a>
-                    </div>
-
-                    <div class="certification-card">
-                        <div class="certification-preview">
-                            <img loading="lazy" src="assets/certif/nvidia.jpg" alt="NVIDIA Data Science Workflows">
-                            <h4>Accelerating End-to-End Data Science Workflows</h4>
-                            <p class="certification-issuer">NVIDIA</p>
-                            <p class="certification-brief">GPU-accelerated data science techniques using RAPIDS (cuDF, cuML) to speed up end-to-end ML pipelines from ETL to model training.</p>
-                        </div>
-                        <a href="assets/certif/nvidia3.pdf" target="_blank" class="view-cert-btn">View Certification</a>
-                    </div>
-
-                    <div class="certification-card">
-                        <div class="certification-preview">
-                            <img loading="lazy" src="assets/certif/IBM.jpg" alt="IBM Data Viz">
-                            <h4>Data Visualization with Python</h4>
-                            <p class="certification-issuer">IBM</p>
-                            <p class="certification-brief">Mastering data visualization libraries like Matplotlib, Seaborn, and Folium to derive insights from data.</p>
-                        </div>
-                        <a href="assets/certif/dataviz.pdf" target="_blank" class="view-cert-btn">View Certification</a>
-                    </div>
-
-                    <div class="certification-card">
-                        <div class="certification-preview">
-                            <img loading="lazy" src="assets/certif/google.png" alt="GC Data Analytics">
-                            <h4>Google Cloud Data Analytics Certificate</h4>
-                            <p class="certification-issuer">Google</p>
-                            <p class="certification-brief">Mastering foundational and advanced data analytics skills, including data cleaning, analysis with SQL and BigQuery, and data visualization to drive business decisions.</p>
-                        </div>
-                        <a href="https://www.credly.com/badges/b7657479-d215-41f3-8399-b687eba03b6a/public_url" target="_blank" class="view-cert-btn">View Certification</a>
-                    </div>
-
-                    <div class="certification-card">
-                        <div class="certification-preview">
-                            <img loading="lazy" src="assets/certif/MyJobGlasses.png" alt="MyJobGlasses Certification">
-                            <h4>Certificate of practice of professional networking</h4>
-                            <p class="certification-issuer">MyJobGlasses</p>
-                            <p class="certification-brief">4 meetings with professionals conducted on My Job Glasses from November 1, 2022 to June 12, 2023</p>
-                        </div>
-                        <a href="assets/certif/myjob.pdf" target="_blank" class="view-cert-btn">View Certification</a>
-                    </div>
-
-                    <div class="certification-card">
-                        <div class="certification-preview">
-                            <img loading="lazy" src="assets/certif/cambridge.jpg" alt="English Certification">
-                            <h4>Business Linguaskill</h4>
-                            <p class="certification-issuer">Cambridge Assessment English</p>
-                            <p class="certification-brief">Demonstrated fluency in business English, covering reading, listening, writing, and speaking skills. <br><br>Score : 175/180</p>
-                        </div>
-                        <a href="assets/certif/linguaskill.pdf" target="_blank" class="view-cert-btn">View Certification</a>
-                    </div>
-
-                    <div class="certification-card">
-                        <div class="certification-preview">
-                            <img loading="lazy" src="assets/certif/france.jpg" alt="English Certification">
-                            <h4>French High School Degree - Mathematics</h4>
-                            <p class="certification-issuer">Baccalauréat</p>
-                            <p class="certification-brief">Score : 19/20</p>
-                        </div>
-                        <a href="assets/certif/math.PDF" target="_blank" class="view-cert-btn">View Certification</a>
-                    </div>
-
-                    <div class="certification-card">
-                        <div class="certification-preview">
-                            <img loading="lazy" src="assets/certif/france.jpg" alt="English Certification">
-                            <h4>French High School Degree - Physic and Chemistry</h4>
-                            <p class="certification-issuer">Baccalauréat</p>
-                            <p class="certification-brief">Score : 18/20</p>
-                        </div>
-                        <a href="assets/certif/physique.PDF" target="_blank" class="view-cert-btn">View Certification</a>
-                    </div>
+                    </article>
 
                 </div>
             </div>
+        </section>
 
-        </main>
-        
-        <hr>
+        <!-- ============ CERTIFICATIONS ============ -->
+        <section class="section" id="certifications" aria-labelledby="certifications-title">
+            <div class="wrap">
+                <h2 class="section-title" id="certifications-title">Certifications</h2>
 
-        <footer>
-            <p>&copy; 2026 Ivann Vasic. All rights reserved.</p>
-        </footer>
+                <div class="cert-groups">
 
-        <script src="js/main.js"></script>
+                    <section class="cert-group">
+                        <div class="cert-issuer">
+                            <img src="assets/opt/certif/nvidia.webp" alt="" width="320" height="180" loading="lazy" decoding="async">
+                            <h3 class="cert-issuer-name">NVIDIA</h3>
+                        </div>
+                        <ul class="cert-list">
+                            <li class="cert">
+                                <h4 class="cert-title">Getting started with Deep Learning</h4>
+                                <p class="cert-brief">Fundamental concepts of Deep Learning, covering neural network architectures and implementation strategies.</p>
+                                <a class="cert-link" href="assets/certif/DL.pdf" target="_blank" rel="noopener noreferrer">View Certification</a>
+                            </li>
+                            <li class="cert">
+                                <h4 class="cert-title">Building LLM Applications With Prompt Engineering</h4>
+                                <p class="cert-brief">Advanced techniques for leveraging Large Language Models through effective prompt engineering.</p>
+                                <a class="cert-link" href="assets/certif/LLM.pdf" target="_blank" rel="noopener noreferrer">View Certification</a>
+                            </li>
+                            <li class="cert">
+                                <h4 class="cert-title">Accelerating End-to-End Data Science Workflows</h4>
+                                <p class="cert-brief">GPU-accelerated data science techniques using RAPIDS (cuDF, cuML) to speed up end-to-end ML pipelines from ETL to model training.</p>
+                                <a class="cert-link" href="assets/certif/nvidia3.pdf" target="_blank" rel="noopener noreferrer">View Certification</a>
+                            </li>
+                        </ul>
+                    </section>
 
+                    <section class="cert-group">
+                        <div class="cert-issuer">
+                            <img src="assets/opt/certif/ibm.webp" alt="" width="320" height="180" loading="lazy" decoding="async">
+                            <h3 class="cert-issuer-name">IBM</h3>
+                        </div>
+                        <ul class="cert-list">
+                            <li class="cert">
+                                <h4 class="cert-title">Data Visualization with Python</h4>
+                                <p class="cert-brief">Mastering data visualization libraries like Matplotlib, Seaborn, and Folium to derive insights from data.</p>
+                                <a class="cert-link" href="assets/certif/dataviz.pdf" target="_blank" rel="noopener noreferrer">View Certification</a>
+                            </li>
+                        </ul>
+                    </section>
 
-    </body>
+                    <section class="cert-group">
+                        <div class="cert-issuer">
+                            <img src="assets/opt/certif/google.webp" alt="" width="320" height="180" loading="lazy" decoding="async">
+                            <h3 class="cert-issuer-name">Google</h3>
+                        </div>
+                        <ul class="cert-list">
+                            <li class="cert">
+                                <h4 class="cert-title">Google Cloud Data Analytics Certificate</h4>
+                                <p class="cert-brief">Mastering foundational and advanced data analytics skills, including data cleaning, analysis with SQL and BigQuery, and data visualization to drive business decisions.</p>
+                                <a class="cert-link" href="https://www.credly.com/badges/b7657479-d215-41f3-8399-b687eba03b6a/public_url" target="_blank" rel="noopener noreferrer">View Certification</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="cert-group">
+                        <div class="cert-issuer">
+                            <img src="assets/opt/certif/myjobglasses.webp" alt="" width="320" height="180" loading="lazy" decoding="async">
+                            <h3 class="cert-issuer-name">MyJobGlasses</h3>
+                        </div>
+                        <ul class="cert-list">
+                            <li class="cert">
+                                <h4 class="cert-title">Certificate of practice of professional networking</h4>
+                                <p class="cert-brief">4 meetings with professionals conducted on My Job Glasses from November 1, 2022 to June 12, 2023</p>
+                                <a class="cert-link" href="assets/certif/myjob.pdf" target="_blank" rel="noopener noreferrer">View Certification</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="cert-group">
+                        <div class="cert-issuer">
+                            <img src="assets/opt/certif/cambridge.webp" alt="" width="320" height="180" loading="lazy" decoding="async">
+                            <h3 class="cert-issuer-name">Cambridge Assessment English</h3>
+                        </div>
+                        <ul class="cert-list">
+                            <li class="cert">
+                                <h4 class="cert-title">Business Linguaskill</h4>
+                                <p class="cert-brief">Demonstrated fluency in business English, covering reading, listening, writing, and speaking skills.</p>
+                                <p class="cert-score">Score : 175/180</p>
+                                <a class="cert-link" href="assets/certif/linguaskill.pdf" target="_blank" rel="noopener noreferrer">View Certification</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="cert-group">
+                        <div class="cert-issuer">
+                            <img src="assets/opt/certif/france.webp" alt="" width="320" height="180" loading="lazy" decoding="async">
+                            <h3 class="cert-issuer-name">Baccalauréat</h3>
+                        </div>
+                        <ul class="cert-list">
+                            <li class="cert">
+                                <h4 class="cert-title">French High School Degree - Mathematics</h4>
+                                <p class="cert-score">Score : 19/20</p>
+                                <a class="cert-link" href="assets/certif/math.PDF" target="_blank" rel="noopener noreferrer">View Certification</a>
+                            </li>
+                            <li class="cert">
+                                <h4 class="cert-title">French High School Degree - Physic and Chemistry</h4>
+                                <p class="cert-score">Score : 18/20</p>
+                                <a class="cert-link" href="assets/certif/physique.PDF" target="_blank" rel="noopener noreferrer">View Certification</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <p class="status"><span class="status-dot" aria-hidden="true"></span>Open to internship opportunities</p>
+            <a class="footer-cta" href="mailto:ivannvasic05@gmail.com">Contact me</a>
+            <ul class="footer-links">
+                <li><a href="https://www.linkedin.com/in/ivann-vasic/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://github.com/VasicIvann" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="VasicIvann_Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a></li>
+            </ul>
+            <p class="copyright">&copy; 2026 Ivann Vasic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
 </html>
-
-
-
-
