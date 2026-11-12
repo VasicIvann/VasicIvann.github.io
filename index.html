@@ -41,7 +41,7 @@
       "name": "Ivann Vasic",
       "alternateName": "Vasic Ivann",
       "url": "https://VasicIvann.github.io/",
-      "image": "https://VasicIvann.github.io/assets/me.jpg",
+      "image": "https://VasicIvann.github.io/assets/me.png",
       "sameAs": [
         "https://www.linkedin.com/in/ivann-vasic/",
         "https://github.com/VasicIvann"
@@ -91,7 +91,7 @@
                     <img src="assets/opt/me-960.webp"
                          srcset="assets/opt/me-480.webp 480w, assets/opt/me-960.webp 960w"
                          sizes="(min-width: 900px) 660px, 42vw"
-                         width="960" height="984" alt="Portrait of Ivann Vasic"
+                         width="960" height="982" alt="Portrait of Ivann Vasic"
                          fetchpriority="high" decoding="async">
                 </div>
 
@@ -156,13 +156,13 @@
                         </li>
                         <li class="path-step">
                             <h4 class="path-label">Future</h4>
-                            <p>In <strong>February 2027</strong>, I start my 6-month end-of-studies internship in <strong>Switzerland</strong>, in La Chaux-de-Fonds. I want to keep building as a <strong>data science and machine learning engineer</strong>, in a <strong>collaborative</strong> and <strong>intercultural</strong> environment.</p>
+                            <p>In <strong>February 2027</strong>, I start my 6-month end-of-studies internship in <strong>Switzerland</strong>. I want to keep building as a <strong>data science and machine learning engineer</strong>, in a <strong>collaborative</strong> and <strong>intercultural</strong> environment.</p>
                         </li>
                     </ol>
 
                     <div class="now">
                         <h3 class="now-label"><span class="status-dot" aria-hidden="true"></span>Now</h3>
-                        <p class="now-text">Master semester (IE<sup>2</sup>) at <strong>Shanghai University</strong> - 5<sup>th</sup> year of engineering - until January 2027, then back in France before my internship in Switzerland.</p>
+                        <p class="now-text">Master semester (IE<sup>2</sup>) at <strong>Shanghai University</strong> - 5<sup>th</sup> year of engineering - until January 2027.</p>
                     </div>
                     </div>
                 </div>
@@ -469,14 +469,14 @@
 
                                         <p><strong>Semester 6 (Spring 2027): End-of-studies internship</strong></p>
                                         <ul>
-                                            <li>Currently looking for End-of-studies internship.</li>
+                                            <li>End-of-studies internship in switzerland.</li>
                                         </ul>
                                     </details>
                                 </div>
                             </li>
 
                             <li class="entry">
-                                <img class="entry-logo" src="assets/opt/timeline/utseus.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
+                                <img class="entry-logo" src="assets/opt/timeline/shanguni.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
                                 <h4 class="entry-title">Master Semester (IE<sup>2</sup>) - Innovation &amp; Entrepreneurship in Intercultural Environments</h4>
                                 <p class="entry-org">Shanghai University (<span lang="zh">上海大学</span>) - UTSEUS</p>
                                 <p class="entry-meta">
@@ -735,323 +735,320 @@
                 </div>
 
                 <h3 class="group-title">School Projects</h3>
-                <div class="project-list">
+<div class="project-list">
 
-                    <article class="project">
-                        <div class="project-aside">
-                            <dl class="project-meta">
-                                <div><dt>School</dt><dd>UTBM</dd></div>
-                                <div><dt>Team size</dt><dd>3</dd></div>
-                                <div><dt>Date</dt><dd>2026</dd></div>
-                                <div><dt>Course</dt><dd>Data Science &amp; Machine Learning</dd></div>
-                            </dl>
-                        </div>
-                        <div class="project-main">
-                            <h4 class="project-title">Bank Term Deposit Prediction - ML Binary Classification</h4>
-                            <p class="project-brief">Machine learning study on a Kaggle Playground dataset, benchmarking six classifiers and tackling severe class imbalance and data leakage.</p>
-                            <p class="project-tools">Python, Pandas, Scikit-learn, XGBoost, LaTeX</p>
-                            <details class="more project-details">
-                                <summary>View Details</summary>
-                                <div class="project-description">
-                                    <p>A full supervised binary classification pipeline predicting whether a client subscribes to a term deposit after a marketing campaign:</p>
-                                    <ul>
-                                        <li>Performed in-depth <strong>EDA</strong> on 750k rows / 16 features, identifying severe class imbalance (~7.3:1) and disguised missing values (<strong>"unknown"</strong> categories, <code>pdays = -1</code>).</li>
-                                        <li>Diagnosed and removed a documented <strong>temporal data leakage</strong> on the <code>duration</code> feature (point-biserial r = +0.52), favouring production realism over leaderboard score.</li>
-                                        <li>Built a leakage-safe <strong>Scikit-learn Pipeline</strong> (<code>ColumnTransformer</code> + <code>StandardScaler</code> + <code>OneHotEncoder</code>) fitted only on training folds.</li>
-                                        <li>Benchmarked six models (Logistic Regression, LDA, QDA, Gaussian NB, Random Forest, <strong>XGBoost</strong>) on four complementary metrics (ROC-AUC, PR-AUC, F1, Brier), validated by stratified 5-fold cross-validation.</li>
-                                    </ul>
-                                    <figure class="project-figure">
-                                        <img src="assets/opt/projects/bank_classification-960.webp"
-                                             srcset="assets/opt/projects/bank_classification-480.webp 480w, assets/opt/projects/bank_classification-960.webp 960w"
-                                             sizes="(min-width: 900px) 480px, calc(100vw - 40px)"
-                                             width="960" height="536" loading="lazy" decoding="async"
-                                             alt="Bank Term Deposit Prediction">
-                                    </figure>
-                                </div>
-                            </details>
-                            <ul class="project-links">
-                                <li><a href="https://github.com/VasicIvann/VasicIvann.github.io/blob/main/assets/Bank_Final_DS52.ipynb" target="_blank" rel="noopener noreferrer">Code</a></li>
-                                <li><a href="assets/final_presentation.pdf" target="_blank" rel="noopener noreferrer">Presentation</a></li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="project">
-                        <div class="project-aside">
-                            <dl class="project-meta">
-                                <div><dt>School</dt><dd>UTBM</dd></div>
-                                <div><dt>Team size</dt><dd>3</dd></div>
-                                <div><dt>Date</dt><dd>2026</dd></div>
-                                <div><dt>Course</dt><dd>DS52 Machine Learning</dd></div>
-                            </dl>
-                        </div>
-                        <div class="project-main">
-                            <h4 class="project-title">IMDB Sentiment Classification</h4>
-                            <p class="project-brief">Binary text classification using NLP pipelines and various models (MLP, LSTM, TextCNN, LR, SVM) to predict movie review sentiment.</p>
-                            <p class="project-tools">Python, PyTorch, Scikit-learn, NLP</p>
-                            <details class="more project-details">
-                                <summary>View Details</summary>
-                                <div class="project-description">
-                                    <p>A comparative study of traditional ML and deep learning models for text sentiment analysis on the 50K IMDB dataset:</p>
-                                    <ul>
-                                        <li>Implemented data cleaning (regex, HTML/URL removal) and vectorization pipelines using <strong>TF-IDF</strong> (with custom stoplist to preserve negations) and integer sequence padding.</li>
-                                        <li>Benchmarked traditional models (Logistic Regression, SVM) against neural architectures (<strong>3-layer MLP</strong>, Unidirectional <strong>LSTM</strong>, and Kim-style <strong>TextCNN</strong>).</li>
-                                        <li>Demonstrated that a simple TF-IDF representation combined with an MLP (90.5% accuracy) or LR/SVM out-performed a from-scratch LSTM (84.9%) which suffered from limited embedding representation.</li>
-                                        <li>Analyzed feature interpretability by identifying the most discriminative bigrams and evaluated training speed versus accuracy.</li>
-                                    </ul>
-                                    <figure class="project-figure">
-                                        <img src="assets/opt/projects/imdb-960.webp"
-                                             srcset="assets/opt/projects/imdb-480.webp 480w, assets/opt/projects/imdb-960.webp 960w"
-                                             sizes="(min-width: 900px) 480px, calc(100vw - 40px)"
-                                             width="960" height="540" loading="lazy" decoding="async"
-                                             alt="IMDB Sentiment Classification">
-                                    </figure>
-                                </div>
-                            </details>
-                            <ul class="project-links">
-                                <li><a href="https://github.com/VasicIvann/VasicIvann.github.io/blob/main/assets/imdb.ipynb" target="_blank" rel="noopener noreferrer">Code</a></li>
-                                <li><a href="assets/Report_TP2_DS52.pdf" target="_blank" rel="noopener noreferrer">PDF Report</a></li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="project">
-                        <div class="project-aside">
-                            <dl class="project-meta">
-                                <div><dt>School</dt><dd>UTBM</dd></div>
-                                <div><dt>Team size</dt><dd>3</dd></div>
-                                <div><dt>Date</dt><dd>2025</dd></div>
-                                <div><dt>Course</dt><dd>Artificial Intelligence</dd></div>
-                            </dl>
-                        </div>
-                        <div class="project-main">
-                            <h4 class="project-title">Teeko - AI Strategy Game</h4>
-                            <p class="project-brief">A Python implementation of the Teeko board game featuring a responsive GUI and a scalable AI opponent using advanced search algorithms.</p>
-                            <p class="project-tools">Python, Tkinter, Minimax, Alpha-Beta Pruning</p>
-                            <details class="more project-details">
-                                <summary>View Details</summary>
-                                <div class="project-description">
-                                    <p>This project involved developing a full version of the Teeko strategy board game with a strong focus on Artificial Intelligence:</p>
-                                    <ul>
-                                        <li>Developed a graphical user interface (GUI) using <strong>Python</strong> and <strong>Tkinter</strong> to manage game phases (Placement and Movement).</li>
-                                        <li>Implemented a scalable AI with three difficulty levels, culminating in a "Hard" mode powered by the <strong>Minimax algorithm</strong> with <strong>Alpha-Beta pruning</strong>.</li>
-                                        <li>Optimized decision-making (Depth 4) using heuristic evaluation functions to assess board control, alignment threats, and win conditions.</li>
-                                        <li>Solved complex state management challenges to handle move validation and real-time game updates efficiently.</li>
-                                    </ul>
-                                    <figure class="project-figure">
-                                        <img src="assets/opt/projects/teeko-960.webp"
-                                             srcset="assets/opt/projects/teeko-480.webp 480w, assets/opt/projects/teeko-960.webp 960w"
-                                             sizes="(min-width: 900px) 480px, calc(100vw - 40px)"
-                                             width="960" height="536" loading="lazy" decoding="async"
-                                             alt="Teeko Game Interface">
-                                    </figure>
-                                </div>
-                            </details>
-                            <ul class="project-links">
-                                <li><a href="assets/Teeko_Project_Report.pdf" target="_blank" rel="noopener noreferrer">Report (french)</a></li>
-                                <li><a href="https://github.com/VasicIvann/Teeko" target="_blank" rel="noopener noreferrer">Code</a></li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="project">
-                        <div class="project-aside">
-                            <dl class="project-meta">
-                                <div><dt>School</dt><dd>UTBM</dd></div>
-                                <div><dt>Team size</dt><dd>4</dd></div>
-                                <div><dt>Date</dt><dd>2024</dd></div>
-                                <div><dt>Course</dt><dd>Mobile Development</dd></div>
-                            </dl>
-                        </div>
-                        <div class="project-main">
-                            <h4 class="project-title">Calorie Crew - Social Nutrition Tracker</h4>
-                            <p class="project-brief">A native Android application designed to assist users in managing their health through personalized calorie tracking and community-driven challenges.</p>
-                            <p class="project-tools">Kotlin, Jetpack Compose, Firebase, MVVM</p>
-                            <details class="more project-details">
-                                <summary>View Details</summary>
-                                <div class="project-description">
-                                    <p>Calorie Crew is a mobile application developed to combine fitness tracking with social motivation[cite: 18]:</p>
-                                    <ul>
-                                        <li>Built entirely with <strong>Kotlin</strong> and <strong>Jetpack Compose</strong>, following Material 3 design principles for a modern and reactive UI.</li>
-                                        <li>Structured using the <strong>MVVM architecture</strong> (Model-View-ViewModel) to ensure scalability and clean separation of concerns.</li>
-                                        <li>Leveraged <strong>Firebase</strong> for secure authentication and <strong>Cloud Firestore</strong> for real-time data synchronization of meals, profiles, and messages.</li>
-                                        <li>Implemented advanced features such as dynamic calorie calculation, community creation, real-time chat, and gamified challenges.</li>
-                                    </ul>
-                                    <figure class="project-figure project-figure-small">
-                                        <img src="assets/opt/projects/caloriecrew-582.webp"
-                                             srcset="assets/opt/projects/caloriecrew-480.webp 480w, assets/opt/projects/caloriecrew-582.webp 582w"
-                                             sizes="(min-width: 900px) 300px, calc(100vw - 40px)"
-                                             width="582" height="392" loading="lazy" decoding="async"
-                                             alt="Calorie Crew Interface">
-                                    </figure>
-                                </div>
-                            </details>
-                            <ul class="project-links">
-                                <li><a href="assets/CalorieCrew_Report.pdf" target="_blank" rel="noopener noreferrer">Report</a></li>
-                                <li><a href="https://www.figma.com/design/VaFbwSbpLtKaxIYR2gPrni/Maquette-SY43" target="_blank" rel="noopener noreferrer">Figma</a></li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="project">
-                        <div class="project-aside">
-                            <dl class="project-meta">
-                                <div><dt>School</dt><dd>UTBM</dd></div>
-                                <div><dt>Team size</dt><dd>2</dd></div>
-                                <div><dt>Date</dt><dd>2024</dd></div>
-                                <div><dt>Course</dt><dd>Web Development (WE4A)</dd></div>
-                            </dl>
-                        </div>
-                        <div class="project-main">
-                            <h4 class="project-title">Moodneuille - a simplified educational platform</h4>
-                            <p class="project-brief">A comprehensive web application inspired by Moodle, featuring user role management, course administration, and dynamic content interaction.</p>
-                            <p class="project-tools">Symfony 7, MySQL, Bootstrap, AJAX</p>
-                            <details class="more project-details">
-                                <summary>View Details</summary>
-                                <div class="project-description">
-                                    <p>In this project, we built a full-stack educational platform using the Symfony 7 framework:</p>
-                                    <ul>
-                                        <li>Designed the database using the Merise methodology (MCD/MLD) and implemented it via Doctrine ORM.</li>
-                                        <li>Structured the application using the MVC architecture to manage complex user roles (Administrator, Professor, Student).</li>
-                                        <li>Implemented secure authentication and access control to manage permissions for courses and content.</li>
-                                        <li>Integrated JavaScript and AJAX to enable dynamic interactions, such as deleting posts without page reloads.</li>
-                                    </ul>
-                                    <figure class="project-figure">
-                                        <img src="assets/opt/projects/moodneuille-960.webp"
-                                             srcset="assets/opt/projects/moodneuille-480.webp 480w, assets/opt/projects/moodneuille-960.webp 960w"
-                                             sizes="(min-width: 900px) 480px, calc(100vw - 40px)"
-                                             width="960" height="536" loading="lazy" decoding="async"
-                                             alt="Educational Platform">
-                                    </figure>
-                                </div>
-                            </details>
-                            <ul class="project-links">
-                                <li><a href="assets/WE4A_Project_Report.pdf" target="_blank" rel="noopener noreferrer">Report (french)</a></li>
-                                <li><a href="https://github.com/VasicIvann/Moodneuille" target="_blank" rel="noopener noreferrer">Code</a></li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="project">
-                        <div class="project-aside">
-                            <dl class="project-meta">
-                                <div><dt>School</dt><dd>UTBM</dd></div>
-                                <div><dt>Team size</dt><dd>2</dd></div>
-                                <div><dt>Date</dt><dd>2024</dd></div>
-                                <div><dt>Course</dt><dd>Object-Oriented Design (AP4B)</dd></div>
-                            </dl>
-                        </div>
-                        <div class="project-main">
-                            <h4 class="project-title">UTBMachine - Logic Game Adaptation</h4>
-                            <p class="project-brief">A digital adaptation of the "Turing Machine" board game featuring a custom UI and a robust object-oriented architecture.</p>
-                            <p class="project-tools">Java, Swing, MVC, UML</p>
-                            <details class="more project-details">
-                                <summary>View Details</summary>
-                                <div class="project-description">
-                                    <p>UTBMachine is a desktop application developed to re-imagine the board game "Turing Machine" with a custom university theme:</p>
-                                    <ul>
-                                        <li>Developed a complete graphical interface using <strong>Java</strong> and the <strong>Swing</strong> library to simulate the game board and note sheets.</li>
-                                        <li>Implemented the <strong>MVC pattern</strong> (Model-View-Controller) to strictly separate the game logic from the UI, ensuring modularity.</li>
-                                        <li>Designed the system using advanced <strong>UML modeling</strong> (Use Case, Class, Sequence, and State-Transition diagrams).</li>
-                                        <li>Created 6 distinct logic scenarios with varying difficulty levels, allowing for solo, competitive, or cooperative gameplay.</li>
-                                    </ul>
-                                    <figure class="project-figure project-figure-small">
-                                        <img src="assets/opt/projects/turing_machine-960.webp"
-                                             srcset="assets/opt/projects/turing_machine-480.webp 480w, assets/opt/projects/turing_machine-960.webp 960w"
-                                             sizes="(min-width: 900px) 300px, calc(100vw - 40px)"
-                                             width="960" height="640" loading="lazy" decoding="async"
-                                             alt="UTBMachine Game">
-                                    </figure>
-                                </div>
-                            </details>
-                            <ul class="project-links">
-                                <li><a href="assets/Turing_Machine_AP4B.pdf" target="_blank" rel="noopener noreferrer">Report (french)</a></li>
-                                <li><a href="https://github.com/Henri-04/AP4B_Turing_Machine_UTBM" target="_blank" rel="noopener noreferrer">Code</a></li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="project">
-                        <div class="project-aside">
-                            <dl class="project-meta">
-                                <div><dt>School</dt><dd>UTBM</dd></div>
-                                <div><dt>Team size</dt><dd>3</dd></div>
-                                <div><dt>Date</dt><dd>2024</dd></div>
-                                <div><dt>Course</dt><dd>Classical and Quantum Algorithm</dd></div>
-                            </dl>
-                        </div>
-                        <div class="project-main">
-                            <h4 class="project-title">The majority element algorithm</h4>
-                            <p class="project-brief">Study about the majority element problem and implementation of a naive quadratic method and a more efficient divide-and-conquer version.</p>
-                            <p class="project-tools">Jupiter, Pyhon</p>
-                            <details class="more project-details">
-                                <summary>View Details</summary>
-                                <div class="project-description">
-                                    <p>In this project :</p>
-                                    <ul>
-                                        <li>We studied the majority element problem and implemented two algorithms to solve it: a naive quadratic method and a more efficient divide-and-conquer version.</li>
-                                        <li>We proved the correctness of the divide-and-conquer algorithm (termination and partial correctness) and compared the time complexities of both approaches.</li>
-                                        <li>Finally, we performed experiments showing that the divide-and-conquer algorithm significantly outperforms the naive one on medium and large datasets.</li>
-                                    </ul>
-                                    <figure class="project-figure">
-                                        <img src="assets/opt/projects/majority_algorithm-960.webp"
-                                             srcset="assets/opt/projects/majority_algorithm-480.webp 480w, assets/opt/projects/majority_algorithm-960.webp 960w"
-                                             sizes="(min-width: 900px) 480px, calc(100vw - 40px)"
-                                             width="960" height="640" loading="lazy" decoding="async"
-                                             alt="The majority algorithm">
-                                    </figure>
-                                </div>
-                            </details>
-                            <ul class="project-links">
-                                <li><a href="assets/majority-algorithm.pdf" target="_blank" rel="noopener noreferrer">Report</a></li>
-                                <li><a href="https://youtu.be/fD2mLWP3F80" target="_blank" rel="noopener noreferrer">Video</a></li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="project">
-                        <div class="project-aside">
-                            <dl class="project-meta">
-                                <div><dt>School</dt><dd>UTBM</dd></div>
-                                <div><dt>Team size</dt><dd>3</dd></div>
-                                <div><dt>Date</dt><dd>2025</dd></div>
-                                <div><dt>Course</dt><dd>Classical and Quantum Algorithm</dd></div>
-                            </dl>
-                        </div>
-                        <div class="project-main">
-                            <h4 class="project-title">The No Communication Theorem</h4>
-                            <p class="project-brief">Study about Quantum Entanglement. Can we communicate faster that the speed of light using quantum computing ?</p>
-                            <p class="project-tools">Jupiter, Python, MPQP</p>
-                            <details class="more project-details">
-                                <summary>View Details</summary>
-                                <div class="project-description">
-                                    <p>In this project, we demonstrate both mathematically and experimentally, that quantum entanglement cannot be used to transmit information:</p>
-                                    <ul>
-                                        <li>Prepared a maximally entangled Bell state using the MPQP quantum circuit simulator.</li>
-                                        <li>Measured Alice’s qubit in different bases (Z and X) to test for signaling effects.</li>
-                                        <li>Measured Bob’s qubit independently and analyzed the statistical outcomes.</li>
-                                        <li>Proved mathematically using reduced density matrices that Bob’s local state is unaffected by Alice’s choices.</li>
-                                        <li>Confirmed through simulation that Bob’s measurement results remain 50/50, regardless of Alice’s measurement basis.</li>
-                                    </ul>
-                                    <figure class="project-figure">
-                                        <img src="assets/opt/projects/quantum_entanglement-960.webp"
-                                             srcset="assets/opt/projects/quantum_entanglement-480.webp 480w, assets/opt/projects/quantum_entanglement-960.webp 960w"
-                                             sizes="(min-width: 900px) 480px, calc(100vw - 40px)"
-                                             width="960" height="522" loading="lazy" decoding="async"
-                                             alt="QuantEnt">
-                                    </figure>
-                                </div>
-                            </details>
-                            <ul class="project-links">
-                                <li><a href="https://www.youtube.com/watch?v=EUIyrzi93aM" target="_blank" rel="noopener noreferrer">Video</a></li>
-                            </ul>
-                        </div>
-                    </article>
-
+    <article class="project project-featured">
+        <div class="project-aside">
+            <figure class="project-figure">
+                <img src="assets/opt/projects/bank_classification-960.webp"
+                     srcset="assets/opt/projects/bank_classification-480.webp 480w, assets/opt/projects/bank_classification-960.webp 960w"
+                     sizes="(min-width: 900px) 380px, calc(100vw - 40px)"
+                     width="960" height="536" loading="lazy" decoding="async"
+                     alt="Bank Term Deposit Prediction">
+            </figure>
+            <dl class="project-meta">
+                <div><dt>School</dt><dd>UTBM</dd></div>
+                <div><dt>Team size</dt><dd>3</dd></div>
+                <div><dt>Date</dt><dd>2026</dd></div>
+                <div><dt>Course</dt><dd>Data Science &amp; Machine Learning</dd></div>
+            </dl>
+        </div>
+        <div class="project-main">
+            <h4 class="project-title">Bank Term Deposit Prediction - ML Binary Classification</h4>
+            <p class="project-brief">Machine learning study on a Kaggle Playground dataset, benchmarking six classifiers and tackling severe class imbalance and data leakage.</p>
+            <p class="project-tools">Python, Pandas, Scikit-learn, XGBoost, LaTeX</p>
+            <details class="more project-details">
+                <summary>View Details</summary>
+                <div class="project-description">
+                    <p>A full supervised binary classification pipeline predicting whether a client subscribes to a term deposit after a marketing campaign:</p>
+                    <ul>
+                        <li>Performed in-depth <strong>EDA</strong> on 750k rows / 16 features, identifying severe class imbalance (~7.3:1) and disguised missing values (<strong>"unknown"</strong> categories, <code>pdays = -1</code>).</li>
+                        <li>Diagnosed and removed a documented <strong>temporal data leakage</strong> on the <code>duration</code> feature (point-biserial r = +0.52), favouring production realism over leaderboard score.</li>
+                        <li>Built a leakage-safe <strong>Scikit-learn Pipeline</strong> (<code>ColumnTransformer</code> + <code>StandardScaler</code> + <code>OneHotEncoder</code>) fitted only on training folds.</li>
+                        <li>Benchmarked six models (Logistic Regression, LDA, QDA, Gaussian NB, Random Forest, <strong>XGBoost</strong>) on four complementary metrics (ROC-AUC, PR-AUC, F1, Brier), validated by stratified 5-fold cross-validation.</li>
+                    </ul>
                 </div>
-            </div>
-        </section>
+            </details>
+            <ul class="project-links">
+                <li><a href="https://github.com/VasicIvann/VasicIvann.github.io/blob/main/assets/Bank_Final_DS52.ipynb" target="_blank" rel="noopener noreferrer">Code</a></li>
+                <li><a href="assets/final_presentation.pdf" target="_blank" rel="noopener noreferrer">Presentation</a></li>
+            </ul>
+        </div>
+    </article>
 
+    <article class="project project-featured">
+        <div class="project-aside">
+            <figure class="project-figure">
+                <img src="assets/opt/projects/imdb-960.webp"
+                     srcset="assets/opt/projects/imdb-480.webp 480w, assets/opt/projects/imdb-960.webp 960w"
+                     sizes="(min-width: 900px) 380px, calc(100vw - 40px)"
+                     width="960" height="540" loading="lazy" decoding="async"
+                     alt="IMDB Sentiment Classification">
+            </figure>
+            <dl class="project-meta">
+                <div><dt>School</dt><dd>UTBM</dd></div>
+                <div><dt>Team size</dt><dd>3</dd></div>
+                <div><dt>Date</dt><dd>2026</dd></div>
+                <div><dt>Course</dt><dd>DS52 Machine Learning</dd></div>
+            </dl>
+        </div>
+        <div class="project-main">
+            <h4 class="project-title">IMDB Sentiment Classification</h4>
+            <p class="project-brief">Binary text classification using NLP pipelines and various models (MLP, LSTM, TextCNN, LR, SVM) to predict movie review sentiment.</p>
+            <p class="project-tools">Python, PyTorch, Scikit-learn, NLP</p>
+            <details class="more project-details">
+                <summary>View Details</summary>
+                <div class="project-description">
+                    <p>A comparative study of traditional ML and deep learning models for text sentiment analysis on the 50K IMDB dataset:</p>
+                    <ul>
+                        <li>Implemented data cleaning (regex, HTML/URL removal) and vectorization pipelines using <strong>TF-IDF</strong> (with custom stoplist to preserve negations) and integer sequence padding.</li>
+                        <li>Benchmarked traditional models (Logistic Regression, SVM) against neural architectures (<strong>3-layer MLP</strong>, Unidirectional <strong>LSTM</strong>, and Kim-style <strong>TextCNN</strong>).</li>
+                        <li>Demonstrated that a simple TF-IDF representation combined with an MLP (90.5% accuracy) or LR/SVM out-performed a from-scratch LSTM (84.9%) which suffered from limited embedding representation.</li>
+                        <li>Analyzed feature interpretability by identifying the most discriminative bigrams and evaluated training speed versus accuracy.</li>
+                    </ul>
+                </div>
+            </details>
+            <ul class="project-links">
+                <li><a href="https://github.com/VasicIvann/VasicIvann.github.io/blob/main/assets/imdb.ipynb" target="_blank" rel="noopener noreferrer">Code</a></li>
+                <li><a href="assets/Report_TP2_DS52.pdf" target="_blank" rel="noopener noreferrer">PDF Report</a></li>
+            </ul>
+        </div>
+    </article>
+
+    <article class="project project-featured">
+        <div class="project-aside">
+            <figure class="project-figure">
+                <img src="assets/opt/projects/teeko-960.webp"
+                     srcset="assets/opt/projects/teeko-480.webp 480w, assets/opt/projects/teeko-960.webp 960w"
+                     sizes="(min-width: 900px) 380px, calc(100vw - 40px)"
+                     width="960" height="536" loading="lazy" decoding="async"
+                     alt="Teeko Game Interface">
+            </figure>
+            <dl class="project-meta">
+                <div><dt>School</dt><dd>UTBM</dd></div>
+                <div><dt>Team size</dt><dd>3</dd></div>
+                <div><dt>Date</dt><dd>2025</dd></div>
+                <div><dt>Course</dt><dd>Artificial Intelligence</dd></div>
+            </dl>
+        </div>
+        <div class="project-main">
+            <h4 class="project-title">Teeko - AI Strategy Game</h4>
+            <p class="project-brief">A Python implementation of the Teeko board game featuring a responsive GUI and a scalable AI opponent using advanced search algorithms.</p>
+            <p class="project-tools">Python, Tkinter, Minimax, Alpha-Beta Pruning</p>
+            <details class="more project-details">
+                <summary>View Details</summary>
+                <div class="project-description">
+                    <p>This project involved developing a full version of the Teeko strategy board game with a strong focus on Artificial Intelligence:</p>
+                    <ul>
+                        <li>Developed a graphical user interface (GUI) using <strong>Python</strong> and <strong>Tkinter</strong> to manage game phases (Placement and Movement).</li>
+                        <li>Implemented a scalable AI with three difficulty levels, culminating in a "Hard" mode powered by the <strong>Minimax algorithm</strong> with <strong>Alpha-Beta pruning</strong>.</li>
+                        <li>Optimized decision-making (Depth 4) using heuristic evaluation functions to assess board control, alignment threats, and win conditions.</li>
+                        <li>Solved complex state management challenges to handle move validation and real-time game updates efficiently.</li>
+                    </ul>
+                </div>
+            </details>
+            <ul class="project-links">
+                <li><a href="assets/Teeko_Project_Report.pdf" target="_blank" rel="noopener noreferrer">Report (french)</a></li>
+                <li><a href="https://github.com/VasicIvann/Teeko" target="_blank" rel="noopener noreferrer">Code</a></li>
+            </ul>
+        </div>
+    </article>
+
+    <article class="project project-featured">
+        <div class="project-aside">
+            <figure class="project-figure">
+                <img src="assets/opt/projects/caloriecrew-582.webp"
+                     srcset="assets/opt/projects/caloriecrew-480.webp 480w, assets/opt/projects/caloriecrew-582.webp 582w"
+                     sizes="(min-width: 900px) 380px, calc(100vw - 40px)"
+                     width="582" height="392" loading="lazy" decoding="async"
+                     alt="Calorie Crew Interface">
+            </figure>
+            <dl class="project-meta">
+                <div><dt>School</dt><dd>UTBM</dd></div>
+                <div><dt>Team size</dt><dd>4</dd></div>
+                <div><dt>Date</dt><dd>2024</dd></div>
+                <div><dt>Course</dt><dd>Mobile Development</dd></div>
+            </dl>
+        </div>
+        <div class="project-main">
+            <h4 class="project-title">Calorie Crew - Social Nutrition Tracker</h4>
+            <p class="project-brief">A native Android application designed to assist users in managing their health through personalized calorie tracking and community-driven challenges.</p>
+            <p class="project-tools">Kotlin, Jetpack Compose, Firebase, MVVM</p>
+            <details class="more project-details">
+                <summary>View Details</summary>
+                <div class="project-description">
+                    <p>Calorie Crew is a mobile application developed to combine fitness tracking with social motivation:</p>
+                    <ul>
+                        <li>Built entirely with <strong>Kotlin</strong> and <strong>Jetpack Compose</strong>, following Material 3 design principles for a modern and reactive UI.</li>
+                        <li>Structured using the <strong>MVVM architecture</strong> (Model-View-ViewModel) to ensure scalability and clean separation of concerns.</li>
+                        <li>Leveraged <strong>Firebase</strong> for secure authentication and <strong>Cloud Firestore</strong> for real-time data synchronization of meals, profiles, and messages.</li>
+                        <li>Implemented advanced features such as dynamic calorie calculation, community creation, real-time chat, and gamified challenges.</li>
+                    </ul>
+                </div>
+            </details>
+            <ul class="project-links">
+                <li><a href="assets/CalorieCrew_Report.pdf" target="_blank" rel="noopener noreferrer">Report</a></li>
+                <li><a href="https://www.figma.com/design/VaFbwSbpLtKaxIYR2gPrni/Maquette-SY43" target="_blank" rel="noopener noreferrer">Figma</a></li>
+            </ul>
+        </div>
+    </article>
+
+    <article class="project project-featured">
+        <div class="project-aside">
+            <figure class="project-figure">
+                <img src="assets/opt/projects/moodneuille-960.webp"
+                     srcset="assets/opt/projects/moodneuille-480.webp 480w, assets/opt/projects/moodneuille-960.webp 960w"
+                     sizes="(min-width: 900px) 380px, calc(100vw - 40px)"
+                     width="960" height="536" loading="lazy" decoding="async"
+                     alt="Educational Platform">
+            </figure>
+            <dl class="project-meta">
+                <div><dt>School</dt><dd>UTBM</dd></div>
+                <div><dt>Team size</dt><dd>2</dd></div>
+                <div><dt>Date</dt><dd>2024</dd></div>
+                <div><dt>Course</dt><dd>Web Development (WE4A)</dd></div>
+            </dl>
+        </div>
+        <div class="project-main">
+            <h4 class="project-title">Moodneuille - a simplified educational platform</h4>
+            <p class="project-brief">A comprehensive web application inspired by Moodle, featuring user role management, course administration, and dynamic content interaction.</p>
+            <p class="project-tools">Symfony 7, MySQL, Bootstrap, AJAX</p>
+            <details class="more project-details">
+                <summary>View Details</summary>
+                <div class="project-description">
+                    <p>In this project, we built a full-stack educational platform using the Symfony 7 framework:</p>
+                    <ul>
+                        <li>Designed the database using the Merise methodology (MCD/MLD) and implemented it via Doctrine ORM.</li>
+                        <li>Structured the application using the MVC architecture to manage complex user roles (Administrator, Professor, Student).</li>
+                        <li>Implemented secure authentication and access control to manage permissions for courses and content.</li>
+                        <li>Integrated JavaScript and AJAX to enable dynamic interactions, such as deleting posts without page reloads.</li>
+                    </ul>
+                </div>
+            </details>
+            <ul class="project-links">
+                <li><a href="assets/WE4A_Project_Report.pdf" target="_blank" rel="noopener noreferrer">Report (french)</a></li>
+                <li><a href="https://github.com/VasicIvann/Moodneuille" target="_blank" rel="noopener noreferrer">Code</a></li>
+            </ul>
+        </div>
+    </article>
+
+    <article class="project project-featured">
+        <div class="project-aside">
+            <figure class="project-figure">
+                <img src="assets/opt/projects/turing_machine-960.webp"
+                     srcset="assets/opt/projects/turing_machine-480.webp 480w, assets/opt/projects/turing_machine-960.webp 960w"
+                     sizes="(min-width: 900px) 380px, calc(100vw - 40px)"
+                     width="960" height="640" loading="lazy" decoding="async"
+                     alt="UTBMachine Game">
+            </figure>
+            <dl class="project-meta">
+                <div><dt>School</dt><dd>UTBM</dd></div>
+                <div><dt>Team size</dt><dd>2</dd></div>
+                <div><dt>Date</dt><dd>2024</dd></div>
+                <div><dt>Course</dt><dd>Object-Oriented Design (AP4B)</dd></div>
+            </dl>
+        </div>
+        <div class="project-main">
+            <h4 class="project-title">UTBMachine - Logic Game Adaptation</h4>
+            <p class="project-brief">A digital adaptation of the "Turing Machine" board game featuring a custom UI and a robust object-oriented architecture.</p>
+            <p class="project-tools">Java, Swing, MVC, UML</p>
+            <details class="more project-details">
+                <summary>View Details</summary>
+                <div class="project-description">
+                    <p>UTBMachine is a desktop application developed to re-imagine the board game "Turing Machine" with a custom university theme:</p>
+                    <ul>
+                        <li>Developed a complete graphical interface using <strong>Java</strong> and the <strong>Swing</strong> library to simulate the game board and note sheets.</li>
+                        <li>Implemented the <strong>MVC pattern</strong> (Model-View-Controller) to strictly separate the game logic from the UI, ensuring modularity.</li>
+                        <li>Designed the system using advanced <strong>UML modeling</strong> (Use Case, Class, Sequence, and State-Transition diagrams).</li>
+                        <li>Created 6 distinct logic scenarios with varying difficulty levels, allowing for solo, competitive, or cooperative gameplay.</li>
+                    </ul>
+                </div>
+            </details>
+            <ul class="project-links">
+                <li><a href="assets/Turing_Machine_AP4B.pdf" target="_blank" rel="noopener noreferrer">Report (french)</a></li>
+                <li><a href="https://github.com/Henri-04/AP4B_Turing_Machine_UTBM" target="_blank" rel="noopener noreferrer">Code</a></li>
+            </ul>
+        </div>
+    </article>
+
+    <article class="project project-featured">
+        <div class="project-aside">
+            <figure class="project-figure">
+                <img src="assets/opt/projects/majority_algorithm-960.webp"
+                     srcset="assets/opt/projects/majority_algorithm-480.webp 480w, assets/opt/projects/majority_algorithm-960.webp 960w"
+                     sizes="(min-width: 900px) 380px, calc(100vw - 40px)"
+                     width="960" height="640" loading="lazy" decoding="async"
+                     alt="The majority algorithm">
+            </figure>
+            <dl class="project-meta">
+                <div><dt>School</dt><dd>UTBM</dd></div>
+                <div><dt>Team size</dt><dd>3</dd></div>
+                <div><dt>Date</dt><dd>2024</dd></div>
+                <div><dt>Course</dt><dd>Classical and Quantum Algorithm</dd></div>
+            </dl>
+        </div>
+        <div class="project-main">
+            <h4 class="project-title">The majority element algorithm</h4>
+            <p class="project-brief">Study about the majority element problem and implementation of a naive quadratic method and a more efficient divide-and-conquer version.</p>
+            <p class="project-tools">Jupiter, Pyhon</p>
+            <details class="more project-details">
+                <summary>View Details</summary>
+                <div class="project-description">
+                    <p>In this project :</p>
+                    <ul>
+                        <li>We studied the majority element problem and implemented two algorithms to solve it: a naive quadratic method and a more efficient divide-and-conquer version.</li>
+                        <li>We proved the correctness of the divide-and-conquer algorithm (termination and partial correctness) and compared the time complexities of both approaches.</li>
+                        <li>Finally, we performed experiments showing that the divide-and-conquer algorithm significantly outperforms the naive one on medium and large datasets.</li>
+                    </ul>
+                </div>
+            </details>
+            <ul class="project-links">
+                <li><a href="assets/majority-algorithm.pdf" target="_blank" rel="noopener noreferrer">Report</a></li>
+                <li><a href="https://youtu.be/fD2mLWP3F80" target="_blank" rel="noopener noreferrer">Video</a></li>
+            </ul>
+        </div>
+    </article>
+
+    <article class="project project-featured">
+        <div class="project-aside">
+            <figure class="project-figure">
+                <img src="assets/opt/projects/quantum_entanglement-960.webp"
+                     srcset="assets/opt/projects/quantum_entanglement-480.webp 480w, assets/opt/projects/quantum_entanglement-960.webp 960w"
+                     sizes="(min-width: 900px) 380px, calc(100vw - 40px)"
+                     width="960" height="522" loading="lazy" decoding="async"
+                     alt="QuantEnt">
+            </figure>
+            <dl class="project-meta">
+                <div><dt>School</dt><dd>UTBM</dd></div>
+                <div><dt>Team size</dt><dd>3</dd></div>
+                <div><dt>Date</dt><dd>2025</dd></div>
+                <div><dt>Course</dt><dd>Classical and Quantum Algorithm</dd></div>
+            </dl>
+        </div>
+        <div class="project-main">
+            <h4 class="project-title">The No Communication Theorem</h4>
+            <p class="project-brief">Study about Quantum Entanglement. Can we communicate faster that the speed of light using quantum computing ?</p>
+            <p class="project-tools">Jupiter, Python, MPQP</p>
+            <details class="more project-details">
+                <summary>View Details</summary>
+                <div class="project-description">
+                    <p>In this project, we demonstrate both mathematically and experimentally, that quantum entanglement cannot be used to transmit information:</p>
+                    <ul>
+                        <li>Prepared a maximally entangled Bell state using the MPQP quantum circuit simulator.</li>
+                        <li>Measured Alice’s qubit in different bases (Z and X) to test for signaling effects.</li>
+                        <li>Measured Bob’s qubit independently and analyzed the statistical outcomes.</li>
+                        <li>Proved mathematically using reduced density matrices that Bob’s local state is unaffected by Alice’s choices.</li>
+                        <li>Confirmed through simulation that Bob’s measurement results remain 50/50, regardless of Alice’s measurement basis.</li>
+                    </ul>
+                </div>
+            </details>
+            <ul class="project-links">
+                <li><a href="https://www.youtube.com/watch?v=EUIyrzi93aM" target="_blank" rel="noopener noreferrer">Video</a></li>
+            </ul>
+        </div>
+    </article>
+
+</div>
         <!-- ============ CERTIFICATIONS ============ -->
         <section class="section" id="certifications" aria-labelledby="certifications-title">
             <div class="wrap">
@@ -1167,7 +1164,6 @@
 
     <footer class="site-footer">
         <div class="wrap">
-            <p class="status"><span class="status-dot" aria-hidden="true"></span>Open to internship opportunities</p>
             <a class="footer-cta" href="mailto:ivannvasic05@gmail.com">Contact me</a>
             <ul class="footer-links">
                 <li><a href="https://www.linkedin.com/in/ivann-vasic/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
