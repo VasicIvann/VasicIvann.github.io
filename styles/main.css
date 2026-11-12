@@ -1,19 +1,22 @@
 /* ==========================================================================
    Ivann Vasic — portfolio
-   Paper, ink, and the peach of the wall behind the portrait.
+   Night paper, pale ink, and a single electric teal accent.
    Inria Serif for names and narrative, Inria Sans for data.
    Mobile first; breakpoints at 700px and 900px.
    ========================================================================== */
 
 :root {
-    --paper: #F2F3F7;
-    --white: #FFFFFF;
-    --ink: #15182D;
-    --ink-2: #41465E;
-    --ink-3: #636880;
-    --rule: #D2D5E0;
-    --peach: #EBC6AC;
-    --signal: #188A54;
+    --paper: #090D16;
+    --white: #121A29;
+    --ink: #E8EEF9;
+    --ink-2: #AAB6CC;
+    --ink-3: #8796B0;
+    --rule: #223049;
+    --peach: #35E0C8;
+    --accent: #35E0C8;
+    --on-accent: #04141A;
+    --deep: #05080E;
+    --signal: #3DDC97;
 
     --serif: "Inria Serif", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
     --sans: "Inria Sans", "Segoe UI", "Helvetica Neue", system-ui, sans-serif;
@@ -45,6 +48,8 @@
 }
 
 html {
+    color-scheme: dark;
+    background: var(--paper);
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
     scroll-padding-top: calc(var(--nav-h) + 16px);
@@ -52,7 +57,11 @@ html {
 
 body {
     margin: 0;
-    background: var(--paper);
+    background:
+        radial-gradient(900px 520px at 78% -80px, rgba(53, 224, 200, 0.10), transparent 70%),
+        radial-gradient(700px 480px at 0% 8%, rgba(110, 120, 255, 0.07), transparent 70%),
+        var(--paper);
+    background-repeat: no-repeat;
     color: var(--ink);
     font-family: var(--sans);
     font-size: var(--fs-body);
@@ -111,7 +120,7 @@ code {
     font-size: 0.88em;
     padding: 0.1em 0.35em;
     border-radius: 3px;
-    background: rgba(21, 24, 45, 0.07);
+    background: rgba(53, 224, 200, 0.1);
 }
 
 :lang(zh) {
@@ -120,12 +129,12 @@ code {
 }
 
 ::selection {
-    background: var(--peach);
-    color: var(--ink);
+    background: var(--accent);
+    color: var(--on-accent);
 }
 
 :focus-visible {
-    outline: 2px solid var(--ink);
+    outline: 2px solid var(--accent);
     outline-offset: 3px;
     border-radius: 2px;
 }
@@ -143,8 +152,8 @@ code {
     z-index: 100;
     padding: 12px 16px;
     border-radius: var(--radius);
-    background: var(--ink);
-    color: var(--paper);
+    background: var(--accent);
+    color: var(--on-accent);
     font-weight: 700;
 }
 
@@ -176,7 +185,9 @@ code {
     position: fixed;
     inset: 0 0 auto 0;
     z-index: 50;
-    background: var(--paper);
+    background: rgba(9, 13, 22, 0.82);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
     border-bottom: 1px solid transparent;
     transition: border-color 0.2s ease;
 }
@@ -214,8 +225,9 @@ code {
 }
 
 .nav-toggle[aria-expanded="true"] {
-    background: var(--ink);
-    color: var(--paper);
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--on-accent);
 }
 
 .nav-links {
@@ -294,7 +306,7 @@ html:not(.js) .nav-links a {
 
     .nav-links a[aria-current="true"] {
         text-decoration-line: underline;
-        text-decoration-color: var(--ink);
+        text-decoration-color: var(--accent);
         text-decoration-thickness: 1.5px;
         text-underline-offset: 0.5em;
     }
@@ -420,13 +432,16 @@ html:not(.js) .nav-links a {
 }
 
 .btn-primary {
-    background: var(--ink);
-    color: var(--paper);
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--on-accent);
+    box-shadow: 0 0 24px rgba(53, 224, 200, 0.28);
 }
 
 .btn-primary:hover {
-    background: #2C3156;
-    border-color: #2C3156;
+    background: #7CF0DE;
+    border-color: #7CF0DE;
+    box-shadow: 0 0 34px rgba(53, 224, 200, 0.45);
 }
 
 .btn-secondary:hover {
@@ -692,7 +707,7 @@ html:not(.js) .link-button {
     font-size: var(--fs-lead);
     font-weight: 300;
     line-height: 1.55;
-    color: #353A52;
+    color: var(--ink-2);
 }
 
 .path-step p strong,
@@ -707,7 +722,9 @@ html:not(.js) .link-button {
     margin-top: clamp(40px, 6vw, 64px);
     margin-inline: calc(-1 * var(--gutter));
     padding: 24px var(--gutter);
-    background: var(--peach);
+    background: var(--white);
+    border-block: 1px solid var(--rule);
+    box-shadow: inset 3px 0 0 var(--accent);
 }
 
 .now-label {
@@ -719,7 +736,8 @@ html:not(.js) .link-button {
 }
 
 .now .status-dot {
-    background: var(--ink);
+    background: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
 }
 
 .now-text {
@@ -786,7 +804,7 @@ html:not(.js) .skills-tabs {
 
 .tab[aria-selected="true"] {
     color: var(--ink);
-    border-bottom-color: var(--ink);
+    border-bottom-color: var(--accent);
 }
 
 .panel[hidden] {
@@ -864,7 +882,7 @@ html:not(.js) .skills-tabs {
 }
 
 .gauge i.on {
-    background: var(--ink);
+    background: var(--accent);
 }
 
 .language-scale {
@@ -935,7 +953,7 @@ html:not(.js) .skills-tabs {
     }
 
     .tab[aria-selected="true"] {
-        border-left-color: var(--ink);
+        border-left-color: var(--accent);
     }
 }
 
@@ -1403,16 +1421,19 @@ html:not(.js) .skills-tabs {
 
 .site-footer {
     padding-block: clamp(64px, 10vw, 120px) 36px;
-    background: var(--ink);
-    color: var(--paper);
+    background:
+        radial-gradient(60% 80% at 85% 0%, rgba(53, 224, 200, 0.14), transparent 70%),
+        var(--deep);
+    border-top: 1px solid var(--rule);
+    color: var(--ink);
 }
 
 .site-footer :focus-visible {
-    outline-color: var(--paper);
+    outline-color: var(--accent);
 }
 
 .site-footer a {
-    text-decoration-color: rgba(242, 243, 247, 0.5);
+    text-decoration-color: rgba(232, 238, 249, 0.45);
 }
 
 .site-footer a:hover {
@@ -1420,7 +1441,7 @@ html:not(.js) .skills-tabs {
 }
 
 .site-footer .status-dot {
-    background: #43C489;
+    background: var(--signal);
 }
 
 .footer-cta {
@@ -1459,7 +1480,7 @@ html:not(.js) .skills-tabs {
 .copyright {
     margin-top: clamp(48px, 8vw, 96px);
     font-size: var(--fs-meta);
-    color: #A4A9BF;
+    color: var(--ink-3);
 }
 
 /* --------------------------------------------------------------------------
